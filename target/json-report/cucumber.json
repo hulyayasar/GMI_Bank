@@ -1,0 +1,176 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-21T15:54:35.067Z",
+        "line": 19,
+        "name": "Register",
+        "description": "",
+        "id": "user-can-register-on-gmi-bank;register;send-data;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9409469600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on registration page",
+            "match": {
+              "location": "stepdefinitions.RegisterStepDefinitions.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 133942300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user writes SSN number using \"123-45-6789\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123-45-6789\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.RegisterStepDefinitions.user_writes_SSN_number_using(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91898400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user writes firstname \"Ayse\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ayse\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefinitions.RegisterStepDefinitions.user_writes_firstname(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 100907200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user writes surname \"Yilmaz\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Yilmaz\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefinitions.RegisterStepDefinitions.user_writes_surname(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 160533400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user writes address \"123 Main Street Anycity FL 32104\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123 Main Street Anycity FL 32104\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefinitions.RegisterStepDefinitions.user_writes_address(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 103723300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user writes mobilephone \"123-123-4444\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123-123-4444\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.RegisterStepDefinitions.user_writes_mobilephone(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 104757000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user writes username \"Thebestusername123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Thebestusername123\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.RegisterStepDefinitions.user_writes_username(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 96705100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user writes email \"xyz@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"xyz@gmail.com\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.RegisterStepDefinitions.user_writes_email(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          }
+        ]
+      }
+    ],
+    "name": "User can register on GMI Bank",
+    "description": "",
+    "id": "user-can-register-on-gmi-bank",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources%E2%80%A8/features/register.feature",
+    "tags": [
+      {
+        "name": "@register",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
