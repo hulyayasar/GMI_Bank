@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="24.387">
-    <testcase classname="An Employee can manage Customer" name=": User goes to the home page and navigates to the manage customer link" time="24.05">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="51.888">
+    <testcase classname="An Employee can manage Customer" name="Employee should see all the information related to the customers." time="51.568">
         <system-out>
             <![CDATA[Given User goes to the home page and log in.................................passed
 Then User clicks on My Operations field.....................................passed
 Then User clicks on Manage Customers field..................................passed
+Given User checks the First Name............................................passed
+And User checks the Last Name...............................................passed
+And User checks the Middle Initial..........................................passed
+And User checks the Email...................................................passed
+And User checks the Mobile Phone Number.....................................passed
+And User checks the Phone Number............................................passed
+And User checks the Address.................................................passed
+And User checks the Create Date.............................................passed
 ]]>
         </system-out>
     </testcase>
