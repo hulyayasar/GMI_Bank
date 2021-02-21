@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-21T15:54:35.067Z",
+        "start_timestamp": "2021-02-21T18:26:30.099Z",
         "line": 19,
         "name": "Register",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9409469600,
+              "duration": 13861497900,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 133942300,
+              "duration": 114746800,
               "status": "passed"
             },
             "line": 6,
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 91898400,
+              "duration": 91990400,
               "status": "passed"
             },
             "line": 7,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 100907200,
+              "duration": 100192700,
               "status": "passed"
             },
             "line": 8,
@@ -79,7 +79,7 @@
           },
           {
             "result": {
-              "duration": 160533400,
+              "duration": 163604900,
               "status": "passed"
             },
             "line": 9,
@@ -97,7 +97,7 @@
           },
           {
             "result": {
-              "duration": 103723300,
+              "duration": 95463600,
               "status": "passed"
             },
             "line": 10,
@@ -115,7 +115,7 @@
           },
           {
             "result": {
-              "duration": 104757000,
+              "duration": 116498000,
               "status": "passed"
             },
             "line": 11,
@@ -133,7 +133,7 @@
           },
           {
             "result": {
-              "duration": 96705100,
+              "duration": 104450400,
               "status": "passed"
             },
             "line": 12,
