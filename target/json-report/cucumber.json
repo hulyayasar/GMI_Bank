@@ -1,0 +1,74 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-21T10:13:58.375Z",
+        "line": 4,
+        "name": ": User goes to the home page and navigates to the manage customer link",
+        "description": "",
+        "id": "an-employee-can-manage-customer;:-user-goes-to-the-home-page-and-navigates-to-the-manage-customer-link",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 23369973000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User goes to the home page and log in",
+            "match": {
+              "location": "stepdefinitions.us12_stepdefinitions.user_goes_to_the_home_page_and_log_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 513761900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on My Operations field",
+            "match": {
+              "location": "stepdefinitions.us12_stepdefinitions.user_clicks_on_My_Operations_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 98987800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on Manage Customers field",
+            "match": {
+              "location": "stepdefinitions.us12_stepdefinitions.user_clicks_on_Manage_Customers_field()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@us_012"
+          }
+        ]
+      }
+    ],
+    "name": "An Employee can manage Customer",
+    "description": "",
+    "id": "an-employee-can-manage-customer",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources%E2%80%A8/features/us_012.feature",
+    "tags": [
+      {
+        "name": "@us_012",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

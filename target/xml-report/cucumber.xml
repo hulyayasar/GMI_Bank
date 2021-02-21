@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="24.387">
+    <testcase classname="An Employee can manage Customer" name=": User goes to the home page and navigates to the manage customer link" time="24.05">
+        <system-out>
+            <![CDATA[Given User goes to the home page and log in.................................passed
+Then User clicks on My Operations field.....................................passed
+Then User clicks on Manage Customers field..................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
