@@ -44,4 +44,7 @@ public class ManageCustomers {
 
     @FindBy(linkText = "Back")
     public WebElement backButton;
+
+    @FindBy(linkText = "Edit")
+    public WebElement editButton;
 }
