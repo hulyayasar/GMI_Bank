@@ -15,6 +15,7 @@ public class US12_StepDefinitions {
 
     AfterLogin afterLogin = new AfterLogin();
     ManageCustomers manageCustomers = new ManageCustomers();
+    String firstIDOnThePageL;
 
     @Given("User goes to the home page and log in")
     public void user_goes_to_the_home_page_and_log_in() {
@@ -46,6 +47,7 @@ public class US12_StepDefinitions {
     @Then("User clicks on Manage Customers field")
     public void user_clicks_on_Manage_Customers_field() {
         afterLogin.manageCustomers.click();
+        firstIDOnThePageL = manageCustomers.firstIDOnThePage.getText();
     }
 
     @Given("User checks the First Name")
@@ -123,6 +125,32 @@ public class US12_StepDefinitions {
             String createDate = w.getText();
             Assert.assertFalse(createDate.isEmpty());
         }
+
+    }
+
+
+    @Given("User clicks on View button on a customer.")
+    public void user_clicks_on_View_button_on_a_customer() {
+        ReusableMethods.waitForVisibility(manageCustomers.viewButton,2);
+        ReusableMethods.waitFor(3);
+        manageCustomers.viewButton.click();
+        //System.out.println(Driver.getDriver().getCurrentUrl());
+        //System.out.println(firstIDOnThePageL);
+        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(firstIDOnThePageL));
+
+    }
+
+    @Given("User clicks on Back button.")
+    public void user_clicks_on_Back_button() {
+        ReusableMethods.scrollToElement(manageCustomers.backButton);
+        ReusableMethods.waitFor(3);
+        manageCustomers.backButton.click();
+
+
+    }
+
+    @Given("User clicks on Edit button.")
+    public void user_clicks_on_Edit_button() {
 
     }
 }

@@ -35,4 +35,13 @@ public class ManageCustomers {
 
     @FindBy(xpath = "//tbody//*//td[9]")
     public List<WebElement> createDates;
+
+    @FindBy(xpath = "//tbody/tr[1]/td[10]/div[1]/a[1]")
+    public WebElement viewButton;
+
+    @FindBy(xpath= "//tbody//tr[1]//td[1]//a[@class='btn btn-success btn-sm']")
+    public WebElement firstIDOnThePage;
+
+    @FindBy(linkText = "Back")
+    public WebElement backButton;
 }
