@@ -1,44 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="32.605">
-    <testcase classname="An Employee can manage Customer" name="TC1202_Employee should see all the information through &quot;View&quot; button and can edit from View Page" time="32.131">
-        <failure message="element click intercepted: Element &lt;a class=&quot;btn btn-info btn-sm&quot; href=&quot;/tp-customer/33892&quot;&gt;...&lt;/a&gt; is not clickable at point (1301, 27). Other element would receive the click: &lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; data-prefix=&quot;fas&quot; data-icon=&quot;user&quot; class=&quot;svg-inline--fa fa-user fa-w-14 &quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 448 512&quot;&gt;...&lt;/svg&gt;&#10;  (Session info: chrome=88.0.4324.182)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-J2R02Q4', ip: '10.146.23.238', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\TESTIN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62846}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6344c384b43d43ad50385a5a36bf4bbd" type="org.openqa.selenium.ElementClickInterceptedException">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="39.24">
+    <testcase classname="An Employee can manage Customer" name="TC1202_Employee should see all the information through &quot;View&quot; button and can edit from View Page" time="38.843">
+        <system-out>
             <![CDATA[Given User goes to the home page and log in.................................passed
 Then User clicks on My Operations field.....................................passed
 Then User clicks on Manage Customers field..................................passed
 Given User clicks on View button on a customer..............................passed
 And User clicks on Back button..............................................passed
-And User clicks on View button on a customer................................failed
-And User clicks on Edit button..............................................skipped
-
-StackTrace:
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="btn btn-info btn-sm" href="/tp-customer/33892">...</a> is not clickable at point (1301, 27). Other element would receive the click: <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" class="svg-inline--fa fa-user fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">...</svg>
-  (Session info: chrome=88.0.4324.182)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-J2R02Q4', ip: '10.146.23.238', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\TESTIN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62846}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6344c384b43d43ad50385a5a36bf4bbd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy16.click(Unknown Source)
-	at stepdefinitions.US12_StepDefinitions.user_clicks_on_View_button_on_a_customer(US12_StepDefinitions.java:136)
-	at ✽.User clicks on View button on a customer.(file:///C:/Users/testinium/Desktop/Eclipse/Maven01/gmibank/src/test/resources%E2%80%A8/features/us_012.feature:12)
+And User clicks on View button on a customer................................passed
+And User clicks on Edit button..............................................passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>

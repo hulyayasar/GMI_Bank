@@ -4,7 +4,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import pages.AfterLogin;
 import pages.ManageCustomers;
 import utilities.ConfigReader;
@@ -16,6 +18,7 @@ public class US12_StepDefinitions {
     AfterLogin afterLogin = new AfterLogin();
     ManageCustomers manageCustomers = new ManageCustomers();
     String firstIDOnThePageL;
+    Actions actions = new Actions(Driver.getDriver());
 
     @Given("User goes to the home page and log in")
     public void user_goes_to_the_home_page_and_log_in() {
@@ -132,7 +135,10 @@ public class US12_StepDefinitions {
     @Given("User clicks on View button on a customer.")
     public void user_clicks_on_View_button_on_a_customer() {
         ReusableMethods.waitForVisibility(manageCustomers.viewButton,2);
-        ReusableMethods.waitFor(3);
+        ReusableMethods.waitFor(2);
+        actions.sendKeys(Keys.PAGE_UP).perform();
+        actions.sendKeys(Keys.PAGE_UP).perform();
+        ReusableMethods.waitFor(2);
         manageCustomers.viewButton.click();
         //System.out.println(Driver.getDriver().getCurrentUrl());
         //System.out.println(firstIDOnThePageL);
@@ -151,6 +157,9 @@ public class US12_StepDefinitions {
 
     @Given("User clicks on Edit button.")
     public void user_clicks_on_Edit_button() {
-
+        ReusableMethods.scrollToElement(manageCustomers.editButton);
+        ReusableMethods.waitFor(3);
+        manageCustomers.editButton.click();
+        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(firstIDOnThePageL));
     }
 }
