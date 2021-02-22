@@ -16,6 +16,7 @@ Feature: An Employee can manage Customer
     And User checks the Phone Number
     And User checks the Address
     And User checks the Create Date
+    And User quits
 
   @Tc1202
   Scenario: TC1202_Employee should see all the information through "View" button and can edit from View Page
@@ -23,6 +24,7 @@ Feature: An Employee can manage Customer
     And User clicks on Back button.
     And User clicks on View button on a customer.
     And User clicks on Edit button.
+    And User quits
 
   @Tc1203
   Scenario: TC1203_Employee should be able to edit customer info from Edit Page
@@ -35,6 +37,16 @@ Feature: An Employee can manage Customer
     And User changes the Address
     And User clicks on Save Button
     Then verifies the success message
+    And User quits
+
+  @Tc1204
+  Scenario: TC1204_Employee should be able to delete customer
+    Given User clicks on Delete button on a customer.
+    And User clicks on Cancel button.
+    And User clicks on Delete button on a customer.
+    And User confirms the deletion.
+    And User quits
+
 
 
 
