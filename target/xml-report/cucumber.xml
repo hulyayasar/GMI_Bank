@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="39.24">
-    <testcase classname="An Employee can manage Customer" name="TC1202_Employee should see all the information through &quot;View&quot; button and can edit from View Page" time="38.843">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="32.593">
+    <testcase classname="An Employee can manage Customer" name="TC1203_Employee should be able to edit customer info from Edit Page" time="32.22">
         <system-out>
             <![CDATA[Given User goes to the home page and log in.................................passed
 Then User clicks on My Operations field.....................................passed
 Then User clicks on Manage Customers field..................................passed
-Given User clicks on View button on a customer..............................passed
-And User clicks on Back button..............................................passed
-And User clicks on View button on a customer................................passed
-And User clicks on Edit button..............................................passed
+Given User clicks on Edit button on a customer..............................passed
+And User changes the FirstName..............................................passed
+And User changes the LastName...............................................passed
+And User changes the Email..................................................passed
+And User changes the MobilePhoneNumber......................................passed
+And User changes the ZipCode................................................passed
+And User changes the Address................................................passed
+And User clicks on Save Button..............................................passed
+Then verifies the success message...........................................passed
 ]]>
         </system-out>
     </testcase>

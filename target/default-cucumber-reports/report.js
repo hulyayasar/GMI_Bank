@@ -45,7 +45,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "TC1202_Employee should see all the information through \"View\" button and can edit from View Page",
+  "name": "TC1203_Employee should be able to edit customer info from Edit Page",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -53,46 +53,96 @@ formatter.scenario({
       "name": "@us_012"
     },
     {
-      "name": "@Tc1202"
+      "name": "@Tc1203"
     }
   ]
 });
 formatter.step({
-  "name": "User clicks on View button on a customer.",
+  "name": "User clicks on Edit button on a customer",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_View_button_on_a_customer()"
+  "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_Edit_button_on_a_customer()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User clicks on Back button.",
+  "name": "User changes the FirstName",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_Back_button()"
+  "location": "stepdefinitions.US12_StepDefinitions.user_changes_the_FirstName()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User clicks on View button on a customer.",
+  "name": "User changes the LastName",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_View_button_on_a_customer()"
+  "location": "stepdefinitions.US12_StepDefinitions.user_changes_the_LastName()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User clicks on Edit button.",
+  "name": "User changes the Email",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_Edit_button()"
+  "location": "stepdefinitions.US12_StepDefinitions.user_changes_the_Email()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User changes the MobilePhoneNumber",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.US12_StepDefinitions.user_changes_the_MobilePhoneNumber()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User changes the ZipCode",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.US12_StepDefinitions.user_changes_the_ZipCode()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User changes the Address",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.US12_StepDefinitions.user_changes_the_Address()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on Save Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_Save_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "verifies the success message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefinitions.US12_StepDefinitions.verifies_the_success_message()"
 });
 formatter.result({
   "status": "passed"

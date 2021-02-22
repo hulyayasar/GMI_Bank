@@ -47,4 +47,40 @@ public class ManageCustomers {
 
     @FindBy(linkText = "Edit")
     public WebElement editButton;
+
+    @FindBy(id = "tp-customer-firstName")
+    public WebElement editFirstName;
+
+    @FindBy(id = "tp-customer-lastName")
+    public WebElement editLastName;
+
+    @FindBy(id = "tp-customer-middleInitial")
+    public WebElement editMiddleInitial;
+
+    @FindBy(id = "tp-customer-email")
+    public WebElement editEmail;
+
+    @FindBy(id = "tp-customer-mobilePhoneNumber")
+    public WebElement editMobilePhoneNumber;
+
+    @FindBy(id = "tp-customer-phoneNumber")
+    public WebElement editPhoneNumber;
+
+    @FindBy(id = "tp-customer-zipCode")
+    public WebElement editZipCode;
+
+    @FindBy(id = "tp-customer-address")
+    public WebElement editAddress;
+
+    @FindBy(id = "tp-customer-city")
+    public WebElement editCity;
+
+    @FindBy(id = "tp-customer-zelleEnrolled")
+    public WebElement editZelleEnrolled;
+
+    @FindBy(id = "save-entity")
+    public WebElement saveButton;
+
+    @FindBy(xpath = "//div[@role='alert']")
+    public WebElement successAlert;
 }
