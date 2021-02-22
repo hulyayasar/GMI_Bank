@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 29623215700,
+              "duration": 29809993200,
               "status": "passed"
             },
             "line": 5,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 495471000,
+              "duration": 484968900,
               "status": "passed"
             },
             "line": 6,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 326567300,
+              "duration": 299625800,
               "status": "passed"
             },
             "line": 7,
@@ -48,8 +48,304 @@
         ]
       },
       {
-        "start_timestamp": "2021-02-22T14:18:01.832Z",
-        "line": 28,
+        "start_timestamp": "2021-02-22T14:39:42.863Z",
+        "line": 10,
+        "name": "TC1201_Employee should see all the information related to the customers.",
+        "description": "",
+        "id": "an-employee-can-manage-customer;tc1201-employee-should-see-all-the-information-related-to-the-customers.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 246918900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User checks the First Name",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_checks_the_First_Name()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 228673100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User checks the Last Name",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_checks_the_Last_Name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 232108700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User checks the Middle Initial",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_checks_the_Middle_Initial()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 233351500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User checks the Email",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_checks_the_Email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 235700500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User checks the Mobile Phone Number",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_checks_the_Mobile_Phone_Number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 236715800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User checks the Phone Number",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_checks_the_Phone_Number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 235697100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User checks the Address",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_checks_the_Address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 252015100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User checks the Create Date",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_checks_the_Create_Date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 703815400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User quits",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_quits()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@us_012"
+          },
+          {
+            "name": "@Tc1201"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User goes to the home page and navigates to the manage customer link",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 21467769800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User goes to the home page and log in",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_goes_to_the_home_page_and_log_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 493931400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on My Operations field",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_My_Operations_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 336696500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on Manage Customers field",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_Manage_Customers_field()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-22T14:40:16.116Z",
+        "line": 22,
+        "name": "TC1202_Employee should see all the information through \"View\" button and can edit from View Page",
+        "description": "",
+        "id": "an-employee-can-manage-customer;tc1202-employee-should-see-all-the-information-through-\"view\"-button-and-can-edit-from-view-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4230424200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User clicks on View button on a customer.",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_View_button_on_a_customer()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3234081900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User clicks on Back button.",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_Back_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4194847300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User clicks on View button on a customer.",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_View_button_on_a_customer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3143804500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User clicks on Edit button.",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_Edit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 640076300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User quits",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_quits()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@us_012"
+          },
+          {
+            "name": "@Tc1202"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User goes to the home page and navigates to the manage customer link",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 21767238700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User goes to the home page and log in",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_goes_to_the_home_page_and_log_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 472961800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on My Operations field",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_My_Operations_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 318606200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on Manage Customers field",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_Manage_Customers_field()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-22T14:40:53.865Z",
+        "line": 30,
         "name": "TC1203_Employee should be able to edit customer info from Edit Page",
         "description": "",
         "id": "an-employee-can-manage-customer;tc1203-employee-should-be-able-to-edit-customer-info-from-edit-page",
@@ -58,10 +354,10 @@
         "steps": [
           {
             "result": {
-              "duration": 113695400,
+              "duration": 92752100,
               "status": "passed"
             },
-            "line": 29,
+            "line": 31,
             "name": "User clicks on Edit button on a customer",
             "match": {
               "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_Edit_button_on_a_customer()"
@@ -70,10 +366,10 @@
           },
           {
             "result": {
-              "duration": 325480700,
+              "duration": 302448900,
               "status": "passed"
             },
-            "line": 30,
+            "line": 32,
             "name": "User changes the FirstName",
             "match": {
               "location": "stepdefinitions.US12_StepDefinitions.user_changes_the_FirstName()"
@@ -82,10 +378,10 @@
           },
           {
             "result": {
-              "duration": 120283400,
+              "duration": 117107300,
               "status": "passed"
             },
-            "line": 31,
+            "line": 33,
             "name": "User changes the LastName",
             "match": {
               "location": "stepdefinitions.US12_StepDefinitions.user_changes_the_LastName()"
@@ -94,10 +390,10 @@
           },
           {
             "result": {
-              "duration": 203550900,
+              "duration": 191567800,
               "status": "passed"
             },
-            "line": 32,
+            "line": 34,
             "name": "User changes the Email",
             "match": {
               "location": "stepdefinitions.US12_StepDefinitions.user_changes_the_Email()"
@@ -106,10 +402,10 @@
           },
           {
             "result": {
-              "duration": 136394300,
+              "duration": 140180200,
               "status": "passed"
             },
-            "line": 33,
+            "line": 35,
             "name": "User changes the MobilePhoneNumber",
             "match": {
               "location": "stepdefinitions.US12_StepDefinitions.user_changes_the_MobilePhoneNumber()"
@@ -118,10 +414,10 @@
           },
           {
             "result": {
-              "duration": 129241100,
+              "duration": 119151100,
               "status": "passed"
             },
-            "line": 34,
+            "line": 36,
             "name": "User changes the ZipCode",
             "match": {
               "location": "stepdefinitions.US12_StepDefinitions.user_changes_the_ZipCode()"
@@ -130,10 +426,10 @@
           },
           {
             "result": {
-              "duration": 154975600,
+              "duration": 125683500,
               "status": "passed"
             },
-            "line": 35,
+            "line": 37,
             "name": "User changes the Address",
             "match": {
               "location": "stepdefinitions.US12_StepDefinitions.user_changes_the_Address()"
@@ -142,10 +438,10 @@
           },
           {
             "result": {
-              "duration": 203641500,
+              "duration": 166922900,
               "status": "passed"
             },
-            "line": 36,
+            "line": 38,
             "name": "User clicks on Save Button",
             "match": {
               "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_Save_Button()"
@@ -154,15 +450,27 @@
           },
           {
             "result": {
-              "duration": 326049400,
+              "duration": 1026100,
               "status": "passed"
             },
-            "line": 37,
+            "line": 39,
             "name": "verifies the success message",
             "match": {
               "location": "stepdefinitions.US12_StepDefinitions.verifies_the_success_message()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 649597900,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User quits",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_quits()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
@@ -171,6 +479,130 @@
           },
           {
             "name": "@Tc1203"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User goes to the home page and navigates to the manage customer link",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 22563378200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User goes to the home page and log in",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_goes_to_the_home_page_and_log_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 495645200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on My Operations field",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_My_Operations_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 321847300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on Manage Customers field",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_Manage_Customers_field()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-22T14:41:18.334Z",
+        "line": 43,
+        "name": "TC1204_Employee should be able to delete customer",
+        "description": "",
+        "id": "an-employee-can-manage-customer;tc1204-employee-should-be-able-to-delete-customer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2121085000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User clicks on Delete button on a customer.",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_Delete_button_on_a_customer()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2079098400,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User clicks on Cancel button.",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_Cancel_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2117600400,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User clicks on Delete button on a customer.",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_clicks_on_Delete_button_on_a_customer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51272200,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "User confirms the deletion.",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_confirms_the_deletion()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 667990500,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "User quits",
+            "match": {
+              "location": "stepdefinitions.US12_StepDefinitions.user_quits()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@us_012"
+          },
+          {
+            "name": "@Tc1204"
           }
         ]
       }

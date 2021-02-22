@@ -83,4 +83,13 @@ public class ManageCustomers {
 
     @FindBy(xpath = "//div[@role='alert']")
     public WebElement successAlert;
+
+    @FindBy(xpath = "//tbody/tr[8]/td[10]/div[1]/a[3]")
+    public WebElement mainDeleteButton;
+
+    @FindBy(xpath = "//button[@class='btn btn-secondary']")
+    public WebElement cancelButtonOnDeletion;
+
+    @FindBy(id = "jhi-confirm-delete-tPCustomer")
+    public WebElement deleteButtonOnDeletion;
 }

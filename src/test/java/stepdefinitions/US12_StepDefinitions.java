@@ -218,4 +218,27 @@ public class US12_StepDefinitions {
         Assert.assertTrue(true);
     }
 
+    @Given("User clicks on Delete button on a customer.")
+    public void user_clicks_on_Delete_button_on_a_customer() {
+        manageCustomers.mainDeleteButton.click();
+        ReusableMethods.waitFor(2);
+    }
+
+    @Given("User clicks on Cancel button.")
+    public void user_clicks_on_Cancel_button() {
+        manageCustomers.cancelButtonOnDeletion.click();
+        ReusableMethods.waitFor(2);
+    }
+
+    @Given("User confirms the deletion.")
+    public void user_confirms_the_deletion() {
+        Assert.assertTrue(manageCustomers.deleteButtonOnDeletion.isDisplayed());
+    }
+
+    @Then("User quits")
+    public void user_quits() {
+        Driver.closeDriver();
+    }
+
+
 }
