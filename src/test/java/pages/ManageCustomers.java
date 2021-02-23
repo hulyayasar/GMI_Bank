@@ -35,4 +35,61 @@ public class ManageCustomers {
 
     @FindBy(xpath = "//tbody//*//td[9]")
     public List<WebElement> createDates;
+
+    @FindBy(xpath = "//tbody/tr[1]/td[10]/div[1]/a[1]")
+    public WebElement viewButton;
+
+    @FindBy(xpath= "//tbody//tr[1]//td[1]//a[@class='btn btn-success btn-sm']")
+    public WebElement firstIDOnThePage;
+
+    @FindBy(linkText = "Back")
+    public WebElement backButton;
+
+    @FindBy(linkText = "Edit")
+    public WebElement editButton;
+
+    @FindBy(id = "tp-customer-firstName")
+    public WebElement editFirstName;
+
+    @FindBy(id = "tp-customer-lastName")
+    public WebElement editLastName;
+
+    @FindBy(id = "tp-customer-middleInitial")
+    public WebElement editMiddleInitial;
+
+    @FindBy(id = "tp-customer-email")
+    public WebElement editEmail;
+
+    @FindBy(id = "tp-customer-mobilePhoneNumber")
+    public WebElement editMobilePhoneNumber;
+
+    @FindBy(id = "tp-customer-phoneNumber")
+    public WebElement editPhoneNumber;
+
+    @FindBy(id = "tp-customer-zipCode")
+    public WebElement editZipCode;
+
+    @FindBy(id = "tp-customer-address")
+    public WebElement editAddress;
+
+    @FindBy(id = "tp-customer-city")
+    public WebElement editCity;
+
+    @FindBy(id = "tp-customer-zelleEnrolled")
+    public WebElement editZelleEnrolled;
+
+    @FindBy(id = "save-entity")
+    public WebElement saveButton;
+
+    @FindBy(xpath = "//div[@role='alert']")
+    public WebElement successAlert;
+
+    @FindBy(xpath = "//tbody/tr[8]/td[10]/div[1]/a[3]")
+    public WebElement mainDeleteButton;
+
+    @FindBy(xpath = "//button[@class='btn btn-secondary']")
+    public WebElement cancelButtonOnDeletion;
+
+    @FindBy(id = "jhi-confirm-delete-tPCustomer")
+    public WebElement deleteButtonOnDeletion;
 }
