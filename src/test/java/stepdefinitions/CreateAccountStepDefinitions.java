@@ -21,7 +21,7 @@ public class CreateAccountStepDefinitions {
 
     @Given("user is on the GMI Bank home page")
     public void user_is_on_the_GMI_Bank_home_page() {
-        Driver.getDriver().get(ConfigReader.getProperty("gmi_url"));
+        Driver.getDriver().get(ConfigReader.getProperty("url"));
     }
 
     @Given("user signs in with valid credentials")
