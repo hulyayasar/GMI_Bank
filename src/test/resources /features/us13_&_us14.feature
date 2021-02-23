@@ -11,6 +11,7 @@ Feature:User story 0013 & 0014
     When user enters description ""
     When user enters balance "111"
     Then verify the description required message
+    And User quits
 
   @TC_1302
   Scenario: TC_1302_Balance is required
@@ -22,6 +23,7 @@ Feature:User story 0013 & 0014
     When user enters balance ""
     When user enters description "aksoy gmi"
     Then verify the balance required message
+    And User quits
 
   @TC_1303
   Scenario Outline: TC_1303_Account types
@@ -34,6 +36,7 @@ Feature:User story 0013 & 0014
     When user enters balance "111"
     When user selects account type "<account types>"
     Then verify the account type is selected as "<account types>"
+    And User quits
     Examples: This is used to pass account types
       |account types |
       |CHECKING      |
@@ -52,6 +55,7 @@ Feature:User story 0013 & 0014
     When user enters balance "111"
     When user selects account status type "<account status types>"
     Then verify the account status type is selected as "<account status types>"
+    And User quits
     Examples: This is used to pass account types
       |account status types |
       |ACTIVE               |
@@ -67,6 +71,7 @@ Feature:User story 0013 & 0014
     When user clicks on Create a new Account
     When user selects account employee
     Then verify account employee is selected
+    And User quits
 
   @TC_1401
   Scenario: TC_1401_a_Past create date
@@ -81,6 +86,7 @@ Feature:User story 0013 & 0014
     When user selects account status type "ACTIVE"
     When user enters Create Date for past
     Then verify the date for past
+    And User quits
 
   @TC_1401
   Scenario: TC_1401_b_Future create date
@@ -95,6 +101,7 @@ Feature:User story 0013 & 0014
     When user selects account status type "ACTIVE"
     When user enters Create Date for future
     Then verify the date for future
+    And User quits
 
   @TC_1402
   Scenario: TC_1402_Closed date
@@ -110,6 +117,7 @@ Feature:User story 0013 & 0014
     When user enters Create Date for present
     When user enters Closed Date earlier than Create Date
     Then verify the Closed Date
+    And User quits
 
   @TC_1403
   Scenario: TC_1403_Date format
@@ -124,6 +132,7 @@ Feature:User story 0013 & 0014
     When user selects account status type "ACTIVE"
     When user enters Create Date for present
     Then verify the present date
+    And User quits
 
   @TC_1404
   Scenario: TC_1404_Choose an account
@@ -139,3 +148,4 @@ Feature:User story 0013 & 0014
     When user enters Create Date for present
     When user clicks on the save button
     Then user selects last created account
+    And User quits

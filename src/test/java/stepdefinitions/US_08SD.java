@@ -100,7 +100,7 @@ public class US_08SD {
         uS_08ChangePassword.newPassword.clear();
         uS_08ChangePassword.newPassword.sendKeys(ConfigReader.getProperty("CurrentPassword"));
     }
-    @Then("Assert password strength level3")
+    @Then("Assert password strength level4")
     public void assertThatLevelChart4() {
         String actualchart4 = uS_08ChangePassword.passwordStrengthlevel1.getAttribute("style");
         Assert.assertEquals(ConfigReader.getProperty("expectedchart4"), actualchart4);
