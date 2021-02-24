@@ -5,6 +5,6 @@ Feature: Login page
     Given user navigate the url
     And click Sing in button
     And enter valid credentials
-    Then click Sing in button
+    Then click for  Sing in button
 
 
