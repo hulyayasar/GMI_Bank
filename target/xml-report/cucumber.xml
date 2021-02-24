@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="23" time="42.979">
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0001_User cannot login with invalid username validating the error message" time="6.22">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the username "hey".........................................passed
+When user enters the password "team35GmiBankProject"........................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0001_User cannot login with invalid username validating the error message 2" time="1.622">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the username "hello".......................................passed
+When user enters the password "thebestemployee".............................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0001_User cannot login with invalid username validating the error message 3" time="1.518">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the username "hi"..........................................passed
+When user enters the password "theUser".....................................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0001_User cannot login with invalid username validating the error message 4" time="1.57">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the username "name"........................................passed
+When user enters the password "theCustomer".................................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0002_User cannot login with invalid username validating the error message" time="1.821">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the password "team35GmiBankProject"........................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+Then verify the error message empty contains "Username".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0002_User cannot login with invalid username validating the error message 2" time="1.776">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the password "thebestemployee".............................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+Then verify the error message empty contains "Username".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0002_User cannot login with invalid username validating the error message 3" time="1.809">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the password "theUser".....................................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+Then verify the error message empty contains "Username".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0002_User cannot login with invalid username validating the error message 4" time="1.794">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the password "theCustomer".................................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+Then verify the error message empty contains "Username".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0003_User cannot login with invalid password validating the error message" time="1.551">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the username "team35GmiBankProject"........................passed
+When user enters the password "hey".........................................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0003_User cannot login with invalid password validating the error message 2" time="1.582">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the username "thebestemployee".............................passed
+When user enters the password "hello".......................................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0003_User cannot login with invalid password validating the error message 3" time="1.443">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the username "theUser".....................................passed
+When user enters the password "hi"..........................................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0003_User cannot login with invalid password validating the error message 4" time="1.54">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the username "theCustomer".................................passed
+When user enters the password "name"........................................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0004_User cannot login with invalid password validating the error message" time="1.854">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the username "team35GmiBankProject"........................passed
+When user enters the password ""............................................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+Then verify the error message empty contains "Password".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0004_User cannot login with invalid password validating the error message 2" time="1.757">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the username "thebestemployee".............................passed
+When user enters the password ""............................................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+Then verify the error message empty contains "Password".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0004_User cannot login with invalid password validating the error message 3" time="1.782">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the username "theUser".....................................passed
+When user enters the password ""............................................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+Then verify the error message empty contains "Password".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0004_User cannot login with invalid password validating the error message 4" time="1.749">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the username "theCustomer".................................passed
+When user enters the password ""............................................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+Then verify the error message empty contains "Password".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0005_User cannot login with invalid username and password validating the error message" time="1.441">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the username "hey".........................................passed
+When user enters the password "hey".........................................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0005_User cannot login with invalid username and password validating the error message 2" time="1.538">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the username "hello".......................................passed
+When user enters the password "hello".......................................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0005_User cannot login with invalid username and password validating the error message 3" time="1.453">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the username "hi"..........................................passed
+When user enters the password "hi"..........................................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0005_User cannot login with invalid username and password validating the error message 4" time="1.478">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the username "name"........................................passed
+When user enters the password "name"........................................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0006_User cannot login with invalid username and password validating the error message" time="2.068">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the username ""............................................passed
+When user enters the password ""............................................passed
+And click on the submit button..............................................passed
+Then verify the error message contains "Failed".............................passed
+Then verify the error message empty contains "Username".....................passed
+Then verify the error message empty contains second "Password"..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0007_User with invalid credentials should be given an option to reset their password" time="1.594">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the username "hey".........................................passed
+When user enters the password "hey".........................................passed
+And click on the submit button..............................................passed
+And verify the error message contains "Failed"..............................passed
+And click on the reset option...............................................passed
+Then verify the resetPassword title is "Reset your password"................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="TC_0008_User with invalid credentials should be given an option to reset their password" time="1.603">
+<system-out><![CDATA[Given User is on the main page..............................................passed
+And click on person sign....................................................passed
+And click on sign in option.................................................passed
+When user enters the username "hey".........................................passed
+When user enters the password "hey".........................................passed
+And click on the submit button..............................................passed
+And verify the error message contains "Failed"..............................passed
+And click on the register a new account option..............................passed
+Then verify the RegisterANewAccount title is "Registration".................passed
+]]></system-out>
+</testcase>
+</testsuite>
