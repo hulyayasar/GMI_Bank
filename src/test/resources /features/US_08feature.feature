@@ -1,82 +1,48 @@
-# new feature
-# Tags: optional
+@gmibankpasswordsegment
 
-
-  @gmibankpasswordlevel
-
-  Feature:
+Feature:
   US_Story08 Password segment on Homepage should be editable
 
   Background:
     Given Go to given URL
     When  User login
     And   Click Account Menu
+    And   To click Sign In Box
     And   Select Password button
-    And   See Password Edit Form
+  @TC_Valid_001
+  Scenario : The old password should not be used
 
-  @TC_001
-  Scenario Outline: The old password should not be used
+    Given To enter Current Password credential
+    And   To enter the Current Password in New password Box
+    And   To enter to Current Password in New password confirmation Box
+    And   To click to Save Button
+    And   Assert password strength level1
+    Then  Assert that Save Alert Negative
 
-    And   Enter the "<Current Password>"
-    And   Enter a "<New Password>"
-    And   Verify fifth level bar is displayed
-    Examples:
-      | Current Password | New Password            |
-      | CurrentPassword  | NewPasswordAllLowerCase |
 
-  @TC_Valid_03
-  Scenario Outline: There should be at least 1 Uppercase char for stronger password and see
+  @TC_Valid_003
+  Scenario : There should be at least 1 Uppercase char for stronger password and see
   the level chart change accordingly
 
-    And   Enter the "<Current Password>"
-    And   Enter a "<New Password>" with at least ONE upper case char
-    And   Verify second level bar is displayed
-    Examples:
-      | Current Password | New Password                |
-      | CurrentPassword  | NewPasswordWithOneUpperCase |
+    And  To enter the New Password to New password box
+    And  To enter the Password with one uppercase adding to New password box
+    And  Assert password strength level2
 
-  @TC_004
-  Scenario Outline: There should be at least 1 lower case char for stronger password and see
-  the level chart change accordingly
-
-    And   Enter the "<Current Password>"
-    And   Enter a "<New Password>" with at least ONE lower case char
-    And   Verify second level bar is displayed
-    Examples:
-      | Current Password | New Password                |
-      | CurrentPassword  | NewPasswordWithOneUpperCase |
-
-  @TC_005
-  Scenario Outline:
-  There should be at least 1 digit
-  and see the level  chart
+  @TC_Valid_007
+  Scenario :
+  There should be at least 1 digit and see the level  chart
   change accordingly
 
-    And   Enter the "<Current Password>"
-    And   Enter a "<New Password>" with at least ONE digit
-    And   Verify second level bar is displayed
-    Examples:
-      | Current Password | New Password         |
-      | CurrentPassword  | NewPasswordWithDigit |
+    And   To enter the New Password to New password box
+    And   To enter the Password with more one digit adding to New password box
+    And   Assert password strength level2
 
-  @TC_006
-  Scenario Outline: There should be at least 7 chars for a stronger password
+  @TC_Valid_011
+  Scenario : There should be at least 7 chars for a stronger password
 
-    And   Enter the "<Current Password>"
-    And   Enter a "<New Password>" with at least seven character long
-    And   Verify fifth level bar is displayed
-    Examples:
-      | Current Password | New Password              |
-      | CurrentPassword  |NewPasswordWithSpecialChar |
+    And    To enter the New Password to New password box
+    And   To enter the valid Password has least 7 chars to New password box
+    And   Assert password strength level5
 
-  @TC_002     @BUG
-  Scenario Outline: The old password should not be used
 
-    And   Enter the "<Current Password>"
-    And   Enter the  "<Old Password>" as new password
-    And   Enter the "<Current Password Again>" in Confirmation box
-    And   Click the save button
-    Then  Verify "Old Password can not be used" message is displayed
-    Examples:
-      | Current Password         | Old Password    | Current Password Again  |
-      |  NewPasswordAllLowerCase | CurrentPassword | NewPasswordAllLowerCase |
+
