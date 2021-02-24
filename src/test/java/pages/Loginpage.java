@@ -24,7 +24,24 @@ public class Loginpage {
     @FindBy(xpath = "//button[@class='btn btn-primary']")
     public WebElement SinginButton;
 
+    @FindBy(xpath = "(//div[@class='alert alert-warning fade show'])[1]")
+    public WebElement resetPassword;
 
+    @FindBy(xpath = "(//a[@href='/account/register'])[2]")
+    public WebElement RegisterANewAccount;
 
+    @FindBy(xpath = "//div[@class='alert alert-danger fade show']")
+    public WebElement failedToSignIn;
 
+    @FindBy(className = "invalid-feedback")
+    public WebElement emptyError;
+
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[2]")
+    public WebElement emptyErrorSecond;
+
+    @FindBy(xpath = "//div//h1//span")
+    public WebElement resetTitle;
+
+    @FindBy(xpath = "//h1[@id='register-title']")
+    public WebElement registrationTitle;
 }
