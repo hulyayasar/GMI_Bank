@@ -19,20 +19,6 @@ public class CreateAccountStepDefinitions {
 
     CreateAccountPage gmiCreateAccountPage = new CreateAccountPage();
 
-    @Given("user is on the GMI Bank home page")
-    public void user_is_on_the_GMI_Bank_home_page() {
-        Driver.getDriver().get(ConfigReader.getProperty("url"));
-    }
-
-    @Given("user signs in with valid credentials")
-    public void user_signs_in_with_valid_credentials() {
-        gmiCreateAccountPage.signInDropList.click();
-        gmiCreateAccountPage.signIn.click();
-        gmiCreateAccountPage.username.sendKeys("thebestemployee");
-        gmiCreateAccountPage.password.sendKeys("thebestemployee");
-        gmiCreateAccountPage.signInButton.click();
-    }
-
     @When("user clicks on My Operations")
     public void user_clicks_on_My_Operations() {
         gmiCreateAccountPage.myOperations.click();
@@ -80,22 +66,22 @@ public class CreateAccountStepDefinitions {
 
     @When("user enters Create Date for past")
     public void user_enters_Create_Date_for_past() {
-        gmiCreateAccountPage.createDate.sendKeys("01.01.2021" + Keys.TAB + "02:02");
+        gmiCreateAccountPage.createDate.sendKeys("01.01.2021" + Keys.TAB + "02:02AM");
     }
 
     @When("user enters Create Date for future")
     public void user_enters_Create_Date_for_future() {
-        gmiCreateAccountPage.createDate.sendKeys("05.05.2022" + Keys.TAB + "05:05");
+        gmiCreateAccountPage.createDate.sendKeys("05.05.2022" + Keys.TAB + "05:05AM");
     }
 
     @When("user enters Create Date for present")
     public void user_enters_Create_Date_for_present() {
-        gmiCreateAccountPage.createDate.sendKeys("21.02.2021" + Keys.TAB + "16:57");
+        gmiCreateAccountPage.createDate.sendKeys("21.02.2021" + Keys.TAB + "04:57PM");
     }
 
     @When("user enters Closed Date earlier than Create Date")
     public void user_enters_Closed_Date_earlier_than_Create_Date() {
-        gmiCreateAccountPage.closedDate.sendKeys("21.01.2021" + Keys.TAB + "16:57");
+        gmiCreateAccountPage.closedDate.sendKeys("21.01.2021" + Keys.TAB + "04:57PM");
     }
 
     @Then("verify the description required message")
