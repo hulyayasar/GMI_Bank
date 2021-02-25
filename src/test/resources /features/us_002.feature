@@ -6,7 +6,7 @@
 
   Background: User in the registration page
     Given user is on registration page
-
+    @TC0001
     Scenario Outline: Any field on the registration page should not be left blank
       And check did user write SSN number using "<SSN>" verify
       When check did user write firstname "<firstname>" verify
@@ -29,7 +29,7 @@
         |123-45-6789|Ayse      |Yilmaz    |123 Main Street Anycity FL 32104 |123-123-4444 |Thebestusername123|xyz@gmail.com||12345                    |
         |123-45-6789|Ayse      |Yilmaz    |123 Main Street Anycity FL 32104 |123-123-4444 |Thebestusername123|xyz@gmail.com|12345                    ||
 
-
+    @TC0002
       Scenario Outline: "SSN number cannot be of any chars nor spec chars except "-"
         And user cannot write chars other than - for SSN number "<SSN>"
         When user writes firstname "<firstname>"
@@ -45,6 +45,7 @@
           |123_45_6789|Ayse      |Yilmaz    |123 Main Street Anycity FL 32104 |123-123-4444 |Thebestusername123|xyz@gmail.com|
           |123*45*6789|Ayse      |Yilmaz    |123 Main Street Anycity FL 32104 |123-123-4444 |Thebestusername123|xyz@gmail.com|
 
+    @TC0003
     Scenario Outline: "Mobilephone number cannot be of any chars nor spec chars except "-"
       And user writes SSN number using "<SSN>"
       When user writes firstname "<firstname>"
@@ -60,6 +61,7 @@
         |123-45-6789|Ayse      |Yilmaz    |123 Main Street Anycity FL 32104 |123-123-4%&b |Thebestusername123|xyz@gmail.com|
         |123-45-6789|Ayse      |Yilmaz    |123 Main Street Anycity FL 32104 |#@s-123-4444 |Thebestusername123|xyz@gmail.com|
 
+    @TC0004
       Scenario Outline: "Email id cannot be created without "@" sign and "." extensions
         And user writes SSN number using "<SSN>"
         When user writes firstname "<firstname>"

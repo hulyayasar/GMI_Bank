@@ -44,6 +44,20 @@ public class Registration_Page {
     @FindBy(xpath = "//*[contains(text(),'translation-not-foun'")
     public WebElement toastContainer;
 
+    @FindBy(xpath = "(//li[@style='background-color: rgb(221, 221, 221);'])[1]")
+    public WebElement greyBox1;
+
+    @FindBy(xpath = "(//li[@style='background-color: rgb(221, 221, 221);'])[2]")
+    public WebElement greyBox2;
+
+    @FindBy(xpath = "(//li[@style='background-color: rgb(221, 221, 221);'])[3]")
+    public WebElement greyBox3;
+
+    @FindBy(xpath = "(//li[@style='background-color: rgb(221, 221, 221);'])[4]")
+    public WebElement greyBox4;
+
+    @FindBy(xpath = "//li[@style='background-color: rgb(0, 255, 0);']")
+    public WebElement fullcolor;
 
     @FindBy(xpath = "(//div[@class='invalid-feedback'])[1]")
     public WebElement EmptyError1;
@@ -90,6 +104,21 @@ public class Registration_Page {
 
     @FindBy(id="register-form")
     public WebElement register_form;
+
+    @FindBy(xpath = "(//li[@style='background-color: rgb(255, 0, 0);']")
+    public WebElement color1;
+
+    @FindBy(xpath = "(//li[@style='background-color: rgb(255, 153, 0);']")
+    public WebElement color2;
+
+    @FindBy(xpath = "(//li[@style='background-color: rgb(255, 255, 0);']")
+    public WebElement color3;
+
+    @FindBy(xpath = "(//li[@style='background-color: rgb(153, 255, 0);']")
+    public WebElement color4;
+
+    @FindBy(xpath = "(//li[@style='background-color: rgb(0, 255, 0);']")
+    public WebElement color5;
 
 
 }
