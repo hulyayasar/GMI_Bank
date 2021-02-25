@@ -1,7 +1,7 @@
 @TC_01
 Feature: System should allow user to manage their account
 
-  Scenario: user enters gmibank homepage then reaches customers accounts
+Scenario: user enters gmibank homepage then reaches customers accounts
     Given user enters gmibank homepage
     Then user clicks userEntry icon
     Then user clicks signIn link
@@ -28,14 +28,15 @@ Feature: System should allow user to manage their account
     Then Clicks on balance and gives amount to transfer
     Then clicks on description "4th transfer"
     Then clicks on make a transfer
-  @TC_03
+    @TC_03
   Scenario: US_015TC_05User(customer) can view transaction
-    Given user enters gmibank homepage
-    Then user clicks userEntry icon
-    Then user clicks signIn link
-    Then user enters  username
-    Then user enters password
-    Then user clicks signIn button
-    And user clicks myOperations
-    Then click on My Accounts
-    Then click on view transaction
+      Given user enters gmibank homepage
+      Then user clicks userEntry icon
+      Then user clicks signIn link
+      Then user enters  username
+      Then user enters password
+      Then user clicks signIn button
+      And user clicks myOperations
+      Then click on My Accounts
+      Then click on view transaction
+

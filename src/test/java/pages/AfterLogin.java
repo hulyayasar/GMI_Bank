@@ -10,13 +10,15 @@ public class AfterLogin {
         PageFactory.initElements(Driver.getDriver(), this);
 
     }
-
     @FindBy(linkText = "My Operations")
     public WebElement myOperations;
-
     @FindBy(linkText = "Manage Customers")
     public WebElement manageCustomers;
-
     @FindBy(linkText = "Manage Accounts")
     public WebElement manageAccounts;
 }
+
+
+
+
+
