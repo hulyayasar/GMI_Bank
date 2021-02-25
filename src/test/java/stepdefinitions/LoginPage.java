@@ -14,13 +14,10 @@ public class LoginPage {
     public void user_navigate_the_url() {
        Driver.getDriver().get(ConfigReader.getProperty("url"));
 
-
-
     }
 
     @Given("click Sing in button")
     public void click_Sing_in_button() {
-
 
         loginpage.selectSingin.click();
         loginpage.Sing_in.click();
@@ -36,7 +33,8 @@ public class LoginPage {
 
     @Then("click for  Sing in button")
     public void click_for_Sing_in_button() {
- loginpage.SinginButton.click();
+     loginpage.SinginButton.click();
+
     }
 
 
