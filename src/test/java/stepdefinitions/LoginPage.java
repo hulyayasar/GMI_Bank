@@ -2,7 +2,6 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import org.openqa.selenium.support.ui.Select;
 import pages.Loginpage;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -29,8 +28,8 @@ public class LoginPage {
 
     @Given("enter valid credentials")
     public void enter_valid_credentials() {
-     loginpage.userName.sendKeys(ConfigReader.getProperty("username"));
-     loginpage.password.sendKeys(ConfigReader.getProperty("password"));
+     loginpage.userName.sendKeys(ConfigReader.getProperty("employeeUsername"));
+     loginpage.password.sendKeys(ConfigReader.getProperty("employeePassword"));
 
     }
 

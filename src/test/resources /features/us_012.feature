@@ -1,10 +1,13 @@
 @us_012
 Feature: An Employee can manage Customer
-
   Background:  User goes to the home page and navigates to the manage customer link
-    Given User goes to the home page and log in
-    Then User clicks on My Operations field
-    Then User clicks on Manage Customers field
+    #Given User goes to the home page and log in
+    Given user navigate the url
+    And click Sing in button
+    And enter valid credentials
+    And click for  Sing in button
+    And User clicks on My Operations field
+    And User clicks on Manage Customers field
 
   @Tc1201
   Scenario: TC1201_Employee should see all the information related to the customers.

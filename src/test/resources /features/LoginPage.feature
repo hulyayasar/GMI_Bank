@@ -1,5 +1,6 @@
 @login
 Feature: Login page
+
   Scenario: User enter credentials
 
     Given user navigate the url
