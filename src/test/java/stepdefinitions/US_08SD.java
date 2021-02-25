@@ -1,3 +1,4 @@
+
 package stepdefinitions;
 import io.cucumber.java.PendingException;
 import io.cucumber.java.en.And;
@@ -16,6 +17,7 @@ import utilities.ReusableMethods;
 
 public class US_08SD {
     US_08 uS_08ChangePassword = new US_08();
+
 
     @Given("^Go to given URL$")
     public void goToHomePage() throws PendingException {
@@ -43,6 +45,7 @@ public class US_08SD {
     public void clickPassword()throws PendingException {
         uS_08ChangePassword.passwordSegment.click();
     }
+
     @Given("^To enter Current Password credential$")
     public void enterCurrentPassword() throws PendingException{
         uS_08ChangePassword.currentPassword.click();
