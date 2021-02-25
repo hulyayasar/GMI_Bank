@@ -1,4 +1,4 @@
-@login
+
 Feature: Login page
   Scenario: User enter credentials
 
