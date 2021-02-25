@@ -1,5 +1,6 @@
 @us_012
 Feature: An Employee can manage Customer
+
   Background:  User goes to the home page and navigates to the manage customer link
     #Given User goes to the home page and log in
     Given user navigate the url
@@ -49,6 +50,7 @@ Feature: An Employee can manage Customer
     And User clicks on Delete button on a customer.
     And User confirms the deletion.
     And User quits
+
 
 
 

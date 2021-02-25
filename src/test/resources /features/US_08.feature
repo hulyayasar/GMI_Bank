@@ -1,8 +1,6 @@
 @gmibankpasswordsegment
 
-Feature:
-  US_Story08 Password segment on Homepage should be editable
-
+Feature:US_Story08 Password segment on Homepage should be editable
   Background:
     Given Go to given URL
     When  User login
@@ -11,7 +9,7 @@ Feature:
     And   Select Password button
 
   @TC_Valid_001
-  Scenario : The old password should not be used
+  Scenario: The old password should not be used
 
     Given To enter Current Password credential
     And   To enter the Current Password in New password Box
@@ -22,7 +20,7 @@ Feature:
 
 
   @TC_Valid_003
-  Scenario : There should be at least 1 Uppercase char for stronger password and see
+  Scenario: There should be at least 1 Uppercase char for stronger password and see
   the level chart change accordingly
 
     And  To enter the New Password to New password box
@@ -30,7 +28,7 @@ Feature:
     And  Assert password strength level2
 
   @TC_Valid_007
-  Scenario :
+  Scenario:
   There should be at least 1 digit and see the level  chart
   change accordingly
 
@@ -39,7 +37,7 @@ Feature:
     And   Assert password strength level2
 
   @TC_Valid_011
-  Scenario : There should be at least 7 chars for a stronger password
+  Scenario: There should be at least 7 chars for a stronger password
 
     And    To enter the New Password to New password box
     And   To enter the valid Password has least 7 chars to New password box

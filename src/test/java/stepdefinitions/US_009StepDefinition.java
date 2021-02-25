@@ -12,13 +12,11 @@ public class US_009StepDefinition {
     @Given("user enters gmibank homepage")
     public void user_enters_gmibank_homepage() {
         Driver.getDriver().get(ConfigReader.getProperty("url"));
-
     }
 
     @Then("user clicks userEntry icon")
     public void user_clicks_userEntry_icon() {
         us_09Pages.userIcon.click();
-
     }
 
     @Then("user clicks signIn link")
