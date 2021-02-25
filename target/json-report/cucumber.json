@@ -1,0 +1,713 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-25T19:03:20.232Z",
+        "line": 18,
+        "name": "TC001 User Info Being Populated When Navigating User Info",
+        "description": "",
+        "id": "us006;tc001-user-info-being-populated-when-navigating-user-info;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14047000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User goes to \"url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"url\"",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefinitions.UserInfo_StepDef.user_goes_to(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 305000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User clicks people image",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clicks_people_image()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2141000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks main page sign in button",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clicks_main_page_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 181000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters username \"team35GmiBankProject\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team35GmiBankProject\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.UserInfo_StepDef.user_enters_username(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 393000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters password \"team35GmiBankProject\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team35GmiBankProject\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.UserInfo_StepDef.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 253000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks sign in button",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clicks_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 772000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks profile image",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clicks_profile_image()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 130000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks User Info",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clicks_User_Info()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2039000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User verifies firstname",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_verifies_firstname()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2032000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User verifies lastname",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_verifies_lastname()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2033000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User verifes email",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_verifes_email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2050000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User verifies language",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_verifies_language()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC001"
+          },
+          {
+            "name": "@FRY"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-25T19:03:46.819Z",
+        "line": 36,
+        "name": "There Should be  Two Language Avaible Eng and Tur",
+        "description": "",
+        "id": "us006;there-should-be--two-language-avaible-eng-and-tur;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1363000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User goes to \"url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"url\"",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefinitions.UserInfo_StepDef.user_goes_to(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 165000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User clicks people image",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clicks_people_image()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[normalize-space()\u003d\u0027Sign in\u0027]\"}\n  (Session info: chrome\u003d88.0.4324.182)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-NJ20V47\u0027, ip: \u0027192.168.1.45\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\\Users\\KURSAT\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 00e35483de371de826629c25ec4e3d4a\n*** Element info: {Using\u003dxpath, value\u003d//span[normalize-space()\u003d\u0027Sign in\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.click(Unknown Source)\r\n\tat stepdefinitions.UserInfo_StepDef.user_clicks_main_page_sign_in_button(UserInfo_StepDef.java:40)\r\n\tat ✽.User clicks main page sign in button(file:///C:/Users/KURSAT/IdeaProjects/gmibank/src/test/resources%E2%80%A8/features/US06_TC001.feature:24)\r\n",
+              "duration": 17133000000,
+              "status": "failed"
+            },
+            "line": 24,
+            "name": "User clicks main page sign in button",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clicks_main_page_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "User enters username \"team35GmiBankProject\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team35GmiBankProject\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.UserInfo_StepDef.user_enters_username(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "User enters password \"team35GmiBankProject\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team35GmiBankProject\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.UserInfo_StepDef.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "User clicks sign in button",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clicks_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "User clicks profile image",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clicks_profile_image()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "User clicks User Info",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clicks_User_Info()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "User change language",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_change_language()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "User clicks save button",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clicks_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "User verifies settings are changing",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_verifies_settings_are_changing()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC001"
+          },
+          {
+            "name": "@FRY"
+          },
+          {
+            "name": "@TC002"
+          },
+          {
+            "name": "@FRY"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-25T19:04:05.559Z",
+        "line": 68,
+        "name": "User should be changing all data",
+        "description": "",
+        "id": "us006;user-should-be-changing-all-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4504000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "User goes to \"url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"url\"",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefinitions.UserInfo_StepDef.user_goes_to(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 800000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "User clicks people image",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clicks_people_image()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath\u003d//span[normalize-space()\u003d\u0027Sign in\u0027]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-NJ20V47\u0027, ip: \u0027192.168.1.45\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.click(Unknown Source)\r\n\tat stepdefinitions.UserInfo_StepDef.user_clicks_main_page_sign_in_button(UserInfo_StepDef.java:40)\r\n\tat ✽.User clicks main page sign in button(file:///C:/Users/KURSAT/IdeaProjects/gmibank/src/test/resources%E2%80%A8/features/US06_TC001.feature:43)\r\n",
+              "duration": 4211000000,
+              "status": "failed"
+            },
+            "line": 43,
+            "name": "User clicks main page sign in button",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clicks_main_page_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "User enters username \"team35GmiBankProject\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team35GmiBankProject\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.UserInfo_StepDef.user_enters_username(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "User enters password \"team35GmiBankProject\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team35GmiBankProject\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.UserInfo_StepDef.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "User clicks sign in button",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clicks_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "User clicks profile image",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clicks_profile_image()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "User clicks User Info",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clicks_User_Info()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "User change firstname",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_change_firstname()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 50,
+            "name": "User clear firstname",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clear_firstname()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "User change lastname",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_change_lastname()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "User clear lastname",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clear_lastname()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "User change email",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_change_email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "User clear first extension",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clear_first_extension()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "User clear  second extension",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clear_second_extension()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "User change language",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_change_language()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 57,
+            "name": "User clicks save button",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clicks_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 58,
+            "name": "User change firstname",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_change_firstname()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 59,
+            "name": "User clear firstname",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clear_firstname()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 60,
+            "name": "User change lastname",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_change_lastname()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "User clear lastname",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clear_lastname()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 62,
+            "name": "User change email",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_change_email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 63,
+            "name": "User clear first extension",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clear_first_extension()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 64,
+            "name": "User clear  second extension",
+            "match": {
+              "location": "stepdefinitions.UserInfo_StepDef.user_clear_second_extension()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC001"
+          },
+          {
+            "name": "@FRY"
+          },
+          {
+            "name": "@TC004-TC007"
+          },
+          {
+            "name": "@FRY"
+          }
+        ]
+      }
+    ],
+    "name": "US006",
+    "description": "",
+    "id": "us006",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources%E2%80%A8/features/US06_TC001.feature",
+    "tags": [
+      {
+        "name": "@TC001",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@FRY",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 8
+        }
+      }
+    ]
+  }
+]

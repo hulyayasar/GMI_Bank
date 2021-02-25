@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="55.495">
+<testcase classname="US006" name="TC001 User Info Being Populated When Navigating User Info" time="26.57">
+<system-out><![CDATA[Given User goes to "url"....................................................passed
+And User clicks people image................................................passed
+And User clicks main page sign in button....................................passed
+And User enters username "team35GmiBankProject".............................passed
+And User enters password "team35GmiBankProject".............................passed
+And User clicks sign in button..............................................passed
+Then User clicks profile image..............................................passed
+And User clicks User Info...................................................passed
+And User verifies firstname.................................................passed
+And User verifies lastname..................................................passed
+And User verifes email......................................................passed
+And User verifies language..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US006" name="There Should be  Two Language Avaible Eng and Tur" time="18.678">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[normalize-space()='Sign in']&quot;}&#10;  (Session info: chrome=88.0.4324.182)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-NJ20V47', ip: '192.168.1.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\KURSAT\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 00e35483de371de826629c25ec4e3d4a&#10;*** Element info: {Using=xpath, value=//span[normalize-space()='Sign in']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User goes to "url"....................................................passed
+And User clicks people image................................................passed
+And User clicks main page sign in button....................................failed
+And User enters username "team35GmiBankProject".............................skipped
+And User enters password "team35GmiBankProject".............................skipped
+And User clicks sign in button..............................................skipped
+Then User clicks profile image..............................................skipped
+And User clicks User Info...................................................skipped
+And User change language....................................................skipped
+And User clicks save button.................................................skipped
+And User verifies settings are changing.....................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[normalize-space()='Sign in']"}
+  (Session info: chrome=88.0.4324.182)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NJ20V47', ip: '192.168.1.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\KURSAT\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 00e35483de371de826629c25ec4e3d4a
+*** Element info: {Using=xpath, value=//span[normalize-space()='Sign in']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at stepdefinitions.UserInfo_StepDef.user_clicks_main_page_sign_in_button(UserInfo_StepDef.java:40)
+	at ✽.User clicks main page sign in button(file:///C:/Users/KURSAT/IdeaProjects/gmibank/src/test/resources%E2%80%A8/features/US06_TC001.feature:24)
+]]></failure>
+</testcase>
+<testcase classname="US006" name="User should be changing all data" time="9.588">
+<failure message="Cannot locate an element using xpath=//span[normalize-space()='Sign in']&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-NJ20V47', ip: '192.168.1.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User goes to "url"....................................................passed
+And User clicks people image................................................passed
+And User clicks main page sign in button....................................failed
+And User enters username "team35GmiBankProject".............................skipped
+And User enters password "team35GmiBankProject".............................skipped
+And User clicks sign in button..............................................skipped
+Then User clicks profile image..............................................skipped
+And User clicks User Info...................................................skipped
+And User change firstname...................................................skipped
+And User clear firstname....................................................skipped
+And User change lastname....................................................skipped
+And User clear lastname.....................................................skipped
+And User change email.......................................................skipped
+And User clear first extension..............................................skipped
+And User clear  second extension............................................skipped
+And User change language....................................................skipped
+And User clicks save button.................................................skipped
+And User change firstname...................................................skipped
+And User clear firstname....................................................skipped
+And User change lastname....................................................skipped
+And User clear lastname.....................................................skipped
+And User change email.......................................................skipped
+And User clear first extension..............................................skipped
+And User clear  second extension............................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//span[normalize-space()='Sign in']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NJ20V47', ip: '192.168.1.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at stepdefinitions.UserInfo_StepDef.user_clicks_main_page_sign_in_button(UserInfo_StepDef.java:40)
+	at ✽.User clicks main page sign in button(file:///C:/Users/KURSAT/IdeaProjects/gmibank/src/test/resources%E2%80%A8/features/US06_TC001.feature:43)
+]]></failure>
+</testcase>
+</testsuite>
