@@ -1,3 +1,4 @@
+
 package stepdefinitions;
 
 import io.cucumber.java.en.And;
@@ -15,7 +16,7 @@ import utilities.ReusableMethods;
 public class US_08SD {
     US_08 uS_08ChangePassword = new US_08();
 
-    @Given("^Go to given URL$")
+    @Given("Go to given URL")
     public void goToHomePage() {
         Driver.getDriver().get((ConfigReader.getProperty("url")));
     }
@@ -40,7 +41,7 @@ public class US_08SD {
     public void clickPassword() {
         uS_08ChangePassword.passwordSegment.click();
     }
-    @Given("^To enter Current Password credential$")
+    @Given("Enter Current Password credential")
     public void enterCurrentPassword() {
         uS_08ChangePassword.currentPassword.click();
         uS_08ChangePassword.currentPassword.sendKeys(ConfigReader.getProperty("CurrentPassword"));
