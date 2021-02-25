@@ -45,14 +45,51 @@ public class Registration_Page {
     public WebElement toastContainer;
 
 
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[1]")
+    public WebElement EmptyError1;
 
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[2]")
+    public WebElement EmptyError2;
 
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[3]")
+    public WebElement EmptyError3;
 
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[4]")
+    public WebElement EmptyError4;
 
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[5]")
+    public WebElement EmptyError5;
 
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[6]")
+    public WebElement EmptyError6;
 
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[7]")
+    public WebElement EmptyError7;
 
+    public WebElement errorsMethod(int i){
 
+        if(i==1){
+            return EmptyError1 ;
+        }else if(i==2){
+            return EmptyError2;
+        }else if(i==3){
+            return EmptyError3;
+        }else if(i==4){
+            return EmptyError4;
+        }else if(i==5){
+            return EmptyError5;
+        }else if(i==6){
+            return EmptyError6;
+        }else if(i==7){
+            return EmptyError7;
+        }else {
+            return EmptyError1;
+        }
+
+    }
+
+    @FindBy(id="register-form")
+    public WebElement register_form;
 
 
 }
