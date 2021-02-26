@@ -16,7 +16,11 @@ import org.junit.runner.RunWith;
 
 
         glue = "stepdefinitions",
-        tags = "@gmibankpasswordsegment",
+
+
+
+        tags = "@TCEmail",
+
         dryRun = false
 )
 public class Runner {
