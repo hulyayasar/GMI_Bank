@@ -16,6 +16,10 @@ public class AfterLogin {
     public WebElement manageCustomers;
     @FindBy(linkText = "Manage Accounts")
     public WebElement manageAccounts;
+    @FindBy(linkText = "My Accounts")
+    public WebElement myAccounts;
+    @FindBy(linkText = "Transfer Money")
+    public WebElement transferMoney;
 }
 
 
