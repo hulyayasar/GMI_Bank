@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         },
         features = "src\\test\\resources\u2028\\features",
         glue = "stepdefinitions",
-        tags = "@gmibankpasswordsegment",
+        tags = "@US_0013_0014",
         dryRun = false
 )
 public class Runner {

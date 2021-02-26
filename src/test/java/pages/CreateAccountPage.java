@@ -8,10 +8,7 @@ public class CreateAccountPage {
     public CreateAccountPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-    @FindBy(linkText = "My Operations")
-    public WebElement myOperations;
-    @FindBy(linkText = "Manage Accounts")
-    public WebElement manageAccounts;
+
     @FindBy(linkText = "Create a new Account")
     public WebElement createANewAccount;
     @FindBy(id = "tp-account-description")
