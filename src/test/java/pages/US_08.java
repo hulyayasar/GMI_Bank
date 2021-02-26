@@ -10,10 +10,10 @@ public class US_08 {
     public US_08 (){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy (xpath=" //a[@href='#']")
+    @FindBy (xpath="//a[@href='#']")
     public WebElement personSignToSignInMenu;
 
-    @FindBy (xpath = "//a[@class='dropdown-item']")
+    @FindBy (xpath = "//a[@id='login-item']")
     public WebElement signInMenu;
 
     @FindBy(xpath = "//input[@name='username']")
@@ -26,7 +26,7 @@ public class US_08 {
     public WebElement signInButton;
 
     @FindBy (xpath="//span[contains(text( ),'Angela Cruz')]")
-    public WebElement AngelaCruzLink;
+   public WebElement AngelaCruzLink;
 
     @FindBy (xpath="//span[contains(text( ),'Password')]")
     public WebElement passwordSegment;
@@ -41,18 +41,19 @@ public class US_08 {
     public WebElement passwordStrengthlevel1;
 
     @FindBy (xpath = "//li[@class='point'][2]")
-    public WebElement passwordStrengthlevel2;
+   public WebElement passwordStrengthlevel2;
 
-    @FindBy (xpath = "//li[@class='point'][3]")
+   @FindBy (xpath = "//li[@class='point'][3]")
     public WebElement passwordStrengthlevel3;
 
     @FindBy (xpath = "//li[@class='point'][4]")
     public WebElement passwordStrengthlevel4;
 
-    @FindBy (xpath = "//li[@class='point'][5]")
+//    @FindBy (xpath = "//li[@class='point'][5]")
+//    public WebElement passwordStrengthlevel5;
+    @FindBy(xpath = "//li[@style='background-color: rgb(0, 255, 0);'][5]")
     public WebElement passwordStrengthlevel5;
-
-    @FindBy (xpath = "//input[@name='confirmPassword']")
+   @FindBy (xpath = "//input[@name='confirmPassword']")
     public WebElement confirmPassword;
 
     @FindBy(xpath = "//div[@class='Toastify__toast Toastify__toast--success toastify-toast']")
@@ -61,7 +62,7 @@ public class US_08 {
     @FindBy(xpath = "//div[@class='Toastify__toast-body']")
     public WebElement alertError;
 
-    @FindBy(xpath = "//span[contains(text(),'Save')]")
+    @FindBy(xpath = "/html/body/div/div/div/div[3]/div[1]/div/div/div/div/div/form/button")
     public WebElement saveButton;
 }
 
