@@ -39,7 +39,7 @@ public class US12_StepDefinitions {
 //        signInButton.click();
 //
 //    }
-
+//
     @Then("User clicks on My Operations field")
     public void user_clicks_on_My_Operations_field() {
         afterLogin.myOperations.click();

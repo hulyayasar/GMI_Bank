@@ -1,16 +1,13 @@
 @US_009
 Feature: reach to customer info
-  Background: user enters gmibank homepage then reaches create new costomers link
-    Given user enters gmibank homepage
-    Then user clicks userEntry icon
-    Then user clicks signIn link
-    Then user enters  username
-    Then user enters password
-    Then user clicks signIn button
-    And user clicks myOperations
-    And user clicks manageCustomers
+  Scenario: user enters gmibank homepage then reaches create new costomers link
+    Given user navigate the url
+    And click Sing in button
+    And enter valid credentials
+    Then click for  Sing in button
+    And User clicks on My Operations field
+    And User clicks on Manage Customers field
     And user clicks createNewCustomer
-
-  Scenario:registration info should be seen
     Then user enters ssn "888-22-4444"
     Then clicks on searchBox
+    And User quits
