@@ -6,7 +6,7 @@ Feature:An Employee can manage Account
     And click Sing in button
     And enter valid credentials
     Then click for  Sing in button
-    Then user clicks on My Operations
+    And User clicks on My Operations field
     Then user clicks on Manage Account
 
   @TC_1301
