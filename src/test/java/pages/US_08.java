@@ -49,8 +49,6 @@ public class US_08 {
     @FindBy (xpath = "//li[@class='point'][4]")
     public WebElement passwordStrengthlevel4;
 
-//    @FindBy (xpath = "//li[@class='point'][5]")
-//    public WebElement passwordStrengthlevel5;
     @FindBy(xpath = "//li[@style='background-color: rgb(0, 255, 0);'][5]")
     public WebElement passwordStrengthlevel5;
    @FindBy (xpath = "//input[@name='confirmPassword']")
@@ -62,7 +60,7 @@ public class US_08 {
     @FindBy(xpath = "//div[@class='Toastify__toast-body']")
     public WebElement alertError;
 
-    @FindBy(xpath = "/html/body/div/div/div/div[3]/div[1]/div/div/div/div/div/form/button")
-    public WebElement saveButton;
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement   saveButton;
 }
 

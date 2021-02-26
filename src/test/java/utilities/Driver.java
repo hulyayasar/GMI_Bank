@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import pages.US_08;
 
 import java.util.concurrent.TimeUnit;
 
@@ -54,6 +55,21 @@ public class Driver {
         if (driver != null) {  // if driver is pointing anywhere
             driver.quit(); // quit when I call closeDriver
             driver = null; // make the driver null so when we call getDriver, we can open it again.
+        }
+    }
+    public static void passwordReliability(){
+        US_08 us_08_page = new US_08();
+        String color = us_08_page.passwordStrengthlevel3.getCssValue("background-color");
+        if(color.contains(ConfigReader.getProperty("red"))){
+            System.out.println("Password is Very Weak...");
+        }else if(color.contains(ConfigReader.getProperty("orange"))){
+            System.out.println("Password is Fair...");
+            //    }else if(color.contains(ConfigurReader.getProperty("yellow"))){
+            //        System.out.println("Password is Weak...");
+        }else if(color.contains(ConfigReader.getProperty("lime"))){
+            System.out.println("Password is Good...");
+        }else if(color.contains(ConfigReader.getProperty("green"))){
+            System.out.println("Password is Strong...");
         }
     }
 
