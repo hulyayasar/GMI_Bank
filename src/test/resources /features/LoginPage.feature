@@ -1,8 +1,8 @@
 
 Feature: Login page
-  @login01
-  Scenario: User enter  valid credentials
 
+  @login01
+  Scenario: User enter credentials
     Given user navigate the url
     And click Sing in button
     And enter valid credentials
@@ -15,6 +15,7 @@ Feature: Login page
       And click Sing in button
       And enter valid credentials
       Then click cencel button
+
 
 
 

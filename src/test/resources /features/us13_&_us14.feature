@@ -1,12 +1,16 @@
 @US_0013_0014
-Feature:User story 0013 & 0014
+Feature:An Employee can manage Account
+
+  Background: User goes to the home page and navigates to the manage account link
+    Given user navigate the url
+    And click Sing in button
+    And enter valid credentials
+    Then click for  Sing in button
+    And User clicks on My Operations field
+    Then user clicks on Manage Account
 
   @TC_1301
   Scenario: TC_1301_Description is required
-    Given user is on the GMI Bank home page
-    And user signs in with valid credentials
-    When user clicks on My Operations
-    When user clicks on Manage Account
     When user clicks on Create a new Account
     When user enters description ""
     When user enters balance "111"
@@ -15,10 +19,6 @@ Feature:User story 0013 & 0014
 
   @TC_1302
   Scenario: TC_1302_Balance is required
-    Given user is on the GMI Bank home page
-    And user signs in with valid credentials
-    When user clicks on My Operations
-    When user clicks on Manage Account
     When user clicks on Create a new Account
     When user enters balance ""
     When user enters description "aksoy gmi"
@@ -27,10 +27,6 @@ Feature:User story 0013 & 0014
 
   @TC_1303
   Scenario Outline: TC_1303_Account types
-    Given user is on the GMI Bank home page
-    And user signs in with valid credentials
-    When user clicks on My Operations
-    When user clicks on Manage Account
     When user clicks on Create a new Account
     When user enters description "aksoy gmi"
     When user enters balance "111"
@@ -46,10 +42,6 @@ Feature:User story 0013 & 0014
 
   @TC_1304
   Scenario Outline: TC_1304_Account status types
-    Given user is on the GMI Bank home page
-    And user signs in with valid credentials
-    When user clicks on My Operations
-    When user clicks on Manage Account
     When user clicks on Create a new Account
     When user enters description "aksoy gmi"
     When user enters balance "111"
@@ -62,23 +54,10 @@ Feature:User story 0013 & 0014
       |SUESPENDED           |
       |CLOSED               |
 
-  @TC_1305
-  Scenario: TC_1305_Select an employee
-    Given user is on the GMI Bank home page
-    And user signs in with valid credentials
-    When user clicks on My Operations
-    When user clicks on Manage Account
-    When user clicks on Create a new Account
-    When user selects account employee
-    Then verify account employee is selected
-    And User quits
+
 
   @TC_1401
   Scenario: TC_1401_a_Past create date
-    Given user is on the GMI Bank home page
-    And user signs in with valid credentials
-    When user clicks on My Operations
-    When user clicks on Manage Account
     When user clicks on Create a new Account
     When user enters description "aksoy gmi"
     When user enters balance "700"
@@ -90,10 +69,6 @@ Feature:User story 0013 & 0014
 
   @TC_1401
   Scenario: TC_1401_b_Future create date
-    Given user is on the GMI Bank home page
-    And user signs in with valid credentials
-    When user clicks on My Operations
-    When user clicks on Manage Account
     When user clicks on Create a new Account
     When user enters description "aksoy gmi"
     When user enters balance "800"
@@ -105,10 +80,6 @@ Feature:User story 0013 & 0014
 
   @TC_1402
   Scenario: TC_1402_Closed date
-    Given user is on the GMI Bank home page
-    And user signs in with valid credentials
-    When user clicks on My Operations
-    When user clicks on Manage Account
     When user clicks on Create a new Account
     When user enters description "aksoy gmi"
     When user enters balance "900"
@@ -121,10 +92,6 @@ Feature:User story 0013 & 0014
 
   @TC_1403
   Scenario: TC_1403_Date format
-    Given user is on the GMI Bank home page
-    And user signs in with valid credentials
-    When user clicks on My Operations
-    When user clicks on Manage Account
     When user clicks on Create a new Account
     When user enters description "aksoy gmi"
     When user enters balance "600"
@@ -136,10 +103,6 @@ Feature:User story 0013 & 0014
 
   @TC_1404
   Scenario: TC_1404_Choose an account
-    Given user is on the GMI Bank home page
-    And user signs in with valid credentials
-    When user clicks on My Operations
-    When user clicks on Manage Account
     When user clicks on Create a new Account
     When user enters description "captain85"
     When user enters balance "750"
@@ -148,4 +111,11 @@ Feature:User story 0013 & 0014
     When user enters Create Date for present
     When user clicks on the save button
     Then user selects last created account
+    And User quits
+
+  @TC_1305
+  Scenario: TC_1305_Select an employee
+    When user clicks on Create a new Account
+    When user selects account employee
+    Then verify account employee is selected
     And User quits
