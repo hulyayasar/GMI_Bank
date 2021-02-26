@@ -1,10 +1,23 @@
 
 Feature: Login page
-  Scenario: User enter credentials
+  @login01
+  Scenario: User enter  valid credentials
 
     Given user navigate the url
     And click Sing in button
     And enter valid credentials
-    Then click for  Sing in button
+    And  click for  Sing in button
+    Then verify log in the personal page
+
+  @login02
+    Scenario: User input valid credentials after that click Cancel button
+      Given user navigate the url
+      And click Sing in button
+      And enter valid credentials
+      Then click cencel button
+
+
+
+
 
 

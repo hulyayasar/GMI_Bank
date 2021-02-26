@@ -23,6 +23,8 @@ public class Loginpage {
 
     @FindBy(xpath = "//button[@class='btn btn-primary']")
     public WebElement SinginButton;
+    @FindBy(xpath = "//button[@class='btn btn-secondary']")
+    public  WebElement CancelButton;
 
 
 
