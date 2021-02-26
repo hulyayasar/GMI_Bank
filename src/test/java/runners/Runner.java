@@ -16,11 +16,9 @@ import org.junit.runner.RunWith;
 
 
         glue = "stepdefinitions",
-
-        tags = "@US015 or @US_009",
-
+        tags = "@us_012",
         dryRun = false
-)
+        )
 public class Runner {
 
 }

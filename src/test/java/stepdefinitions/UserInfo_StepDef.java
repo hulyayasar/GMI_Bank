@@ -76,6 +76,7 @@ public class UserInfo_StepDef {
         }
 
 
+
     }
 
     @Then("User clicks save button")
@@ -83,6 +84,19 @@ public class UserInfo_StepDef {
 
         ReusableMethods.waitFor(2);
         userInfoObj.saveButton.click();
+
+        Select select = new Select(userInfoObj.language);
+
+        if(actualLanguage.equals("en")){
+
+            select.selectByIndex(1);
+        }else{
+            select.selectByIndex(0);
+        }
+
+        ReusableMethods.waitFor(1);
+        userInfoObj.saveButton.click();
+
     }
 
 
@@ -102,6 +116,20 @@ public class UserInfo_StepDef {
             softAssert.assertTrue(userInfoObj.verifyTrMessage.getText().contains("Ayarlar"));
            // softAssert.assertAll();
         }
+
+        Select select = new Select(userInfoObj.language);
+
+        if(actualLanguage.equals("en")){
+
+            select.selectByIndex(1);
+        }else{
+            select.selectByIndex(0);
+        }
+
+        ReusableMethods.waitFor(1);
+        userInfoObj.saveButton.click();
+
+
     }
 
     @Then("User change firstname")
@@ -127,7 +155,7 @@ public class UserInfo_StepDef {
             softAssert.assertAll();
         }
 
-        ReusableMethods.waitFor(10);
+        ReusableMethods.waitFor(2);
 
 
     }
@@ -153,7 +181,7 @@ public class UserInfo_StepDef {
             softAssert.assertAll();
         }
 
-        ReusableMethods.waitFor(10);
+        ReusableMethods.waitFor(2);
 
         userInfoObj.firstName.click();
         ReusableMethods.waitFor(2);
@@ -185,14 +213,14 @@ public class UserInfo_StepDef {
         if(actualLanguage.equals("en")){
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.verifyEngMessage.getText().contains("Settings"));
-            softAssert.assertAll();
+           // softAssert.assertAll();
         }else{
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.verifyTrMessage.getText().contains("Ayarlar"));
-            softAssert.assertAll();
+         //   softAssert.assertAll();
         }
 
-        ReusableMethods.waitFor(10);
+        ReusableMethods.waitFor(2);
     }
 
     @Then("User clear lastname")
@@ -210,14 +238,14 @@ public class UserInfo_StepDef {
         if(actualLanguage.equals("en")){
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.errorMessage.getText().contains("required"));
-            softAssert.assertAll();
+          //  softAssert.assertAll();
         }else{
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.errorMessage.getText().contains("zorunludur"));
-            softAssert.assertAll();
+           // softAssert.assertAll();
         }
 
-        ReusableMethods.waitFor(10);
+        ReusableMethods.waitFor(2);
 
         userInfoObj.lastName.click();
         ReusableMethods.waitFor(2);
@@ -230,11 +258,11 @@ public class UserInfo_StepDef {
         if(actualLanguage.equals("en")){
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.verifyEngMessage.getText().contains("Settings"));
-            softAssert.assertAll();
+          //  softAssert.assertAll();
         }else{
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.verifyTrMessage.getText().contains("Ayarlar"));
-            softAssert.assertAll();
+          //  softAssert.assertAll();
         }
 
     }
@@ -255,14 +283,14 @@ public class UserInfo_StepDef {
         if(actualLanguage.equals("en")){
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.verifyEngMessage.getText().contains("Settings"));
-            softAssert.assertAll();
+          //  softAssert.assertAll();
         }else{
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.verifyTrMessage.getText().contains("Ayarlar"));
-            softAssert.assertAll();
+          //  softAssert.assertAll();
         }
 
-        ReusableMethods.waitFor(10);
+        ReusableMethods.waitFor(2);
 
     }
 
@@ -284,11 +312,11 @@ public class UserInfo_StepDef {
         if(actualLanguage.equals("en")){
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.errorMessage.getText().contains("invalid"));
-            softAssert.assertAll();
+         //   softAssert.assertAll();
         }else{
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.errorMessage.getText().contains("geçersizdir"));
-            softAssert.assertAll();
+         //   softAssert.assertAll();
         }
 
 
@@ -317,11 +345,11 @@ public class UserInfo_StepDef {
         if(actualLanguage.equals("en")){
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.errorMessage.getText().contains("invalid"));
-            softAssert.assertAll();
+         //   softAssert.assertAll();
         }else{
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.errorMessage.getText().contains("geçersizdir"));
-            softAssert.assertAll();
+           // softAssert.assertAll();
         }
 
         ReusableMethods.waitFor(2);
@@ -330,7 +358,7 @@ public class UserInfo_StepDef {
         userInfoObj.email.sendKeys("thebestemployee@gmail.com");
 
         userInfoObj.saveButton.click();
-        ReusableMethods.waitFor(10);
+        ReusableMethods.waitFor(2);
 
 
     }
