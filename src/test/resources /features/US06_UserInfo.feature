@@ -1,5 +1,7 @@
-@TC001
+@US06
+
 Feature: US006
+  @TC001
   Scenario:TC001 User Info Being Populated When Navigating User Info
     Given user navigate the url
     And click Sing in button
@@ -11,9 +13,10 @@ Feature: US006
     And  User verifies lastname
     And  User verifes email
     And  User verifies language
+    And  User quits
 
 
-  @TC002
+  @TCLanguage
   Scenario:There Should be  Two Language Avaible Eng and Tur
     Given user navigate the url
     And click Sing in button
@@ -24,6 +27,7 @@ Feature: US006
     And  User change language
     And  User clicks save button
     And  User verifies settings are changing
+    And  User quits
 
 
 
@@ -51,6 +55,7 @@ Feature: US006
     And  User change email
     And  User clear first extension
     And  User clear  second extension
+    And  User quits
 
 
 
