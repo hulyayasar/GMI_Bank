@@ -13,7 +13,7 @@ Feature: US006
     And  User verifies language
 
 
-  @TC002
+  @TCLanguage
   Scenario:There Should be  Two Language Avaible Eng and Tur
     Given user navigate the url
     And click Sing in button

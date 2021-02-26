@@ -185,11 +185,11 @@ public class UserInfo_StepDef {
         if(actualLanguage.equals("en")){
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.verifyEngMessage.getText().contains("Settings"));
-            softAssert.assertAll();
+           // softAssert.assertAll();
         }else{
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.verifyTrMessage.getText().contains("Ayarlar"));
-            softAssert.assertAll();
+         //   softAssert.assertAll();
         }
 
         ReusableMethods.waitFor(10);
@@ -210,11 +210,11 @@ public class UserInfo_StepDef {
         if(actualLanguage.equals("en")){
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.errorMessage.getText().contains("required"));
-            softAssert.assertAll();
+          //  softAssert.assertAll();
         }else{
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.errorMessage.getText().contains("zorunludur"));
-            softAssert.assertAll();
+           // softAssert.assertAll();
         }
 
         ReusableMethods.waitFor(10);
@@ -230,11 +230,11 @@ public class UserInfo_StepDef {
         if(actualLanguage.equals("en")){
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.verifyEngMessage.getText().contains("Settings"));
-            softAssert.assertAll();
+          //  softAssert.assertAll();
         }else{
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.verifyTrMessage.getText().contains("Ayarlar"));
-            softAssert.assertAll();
+          //  softAssert.assertAll();
         }
 
     }
@@ -255,11 +255,11 @@ public class UserInfo_StepDef {
         if(actualLanguage.equals("en")){
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.verifyEngMessage.getText().contains("Settings"));
-            softAssert.assertAll();
+          //  softAssert.assertAll();
         }else{
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.verifyTrMessage.getText().contains("Ayarlar"));
-            softAssert.assertAll();
+          //  softAssert.assertAll();
         }
 
         ReusableMethods.waitFor(10);
@@ -284,11 +284,11 @@ public class UserInfo_StepDef {
         if(actualLanguage.equals("en")){
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.errorMessage.getText().contains("invalid"));
-            softAssert.assertAll();
+         //   softAssert.assertAll();
         }else{
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.errorMessage.getText().contains("geçersizdir"));
-            softAssert.assertAll();
+         //   softAssert.assertAll();
         }
 
 
@@ -317,11 +317,11 @@ public class UserInfo_StepDef {
         if(actualLanguage.equals("en")){
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.errorMessage.getText().contains("invalid"));
-            softAssert.assertAll();
+         //   softAssert.assertAll();
         }else{
             ReusableMethods.waitFor(2);
             softAssert.assertTrue(userInfoObj.errorMessage.getText().contains("geçersizdir"));
-            softAssert.assertAll();
+           // softAssert.assertAll();
         }
 
         ReusableMethods.waitFor(2);

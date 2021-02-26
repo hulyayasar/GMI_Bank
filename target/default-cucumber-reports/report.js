@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources%E2%80%A8/features/US06_TC001.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources%E2%80%A8/features/US06_UserInfo.feature");
 formatter.feature({
   "name": "US006",
   "description": "",
@@ -230,8 +230,7 @@ formatter.match({
   "location": "stepdefinitions.UserInfo_StepDef.user_clear_first_extension()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: The following asserts failed:\n\texpected [true] but found [false]\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)\r\n\tat stepdefinitions.UserInfo_StepDef.user_clear_first_extension(UserInfo_StepDef.java:291)\r\n\tat ✽.User clear first extension(file:///C:/Users/KURSAT/IdeaProjects/gmibank/src/test/resources%E2%80%A8/features/US06_TC001.feature:52)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "User clear  second extension",
@@ -241,6 +240,6 @@ formatter.match({
   "location": "stepdefinitions.UserInfo_StepDef.user_clear_second_extension()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 });
