@@ -215,10 +215,7 @@ public class ReusableMethods {
     }
 
     // Silinmeyen Texboxlari temizlemek icin ==> .clean() in daha guclusu
-    public static void cleanByJs(WebElement element) {
-        JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
-        jse.executeScript("arguments[0].value = '';", element);
-    }
+
 
     // ===== RONDOM DATA === //
 
@@ -260,4 +257,12 @@ public class ReusableMethods {
         return myData;
     }
 
+
+    public static void cleanByJs(WebElement element) {
+        JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
+        jse.executeScript("arguments[0].value = '';", element);
+    }
 }
+
+
+
