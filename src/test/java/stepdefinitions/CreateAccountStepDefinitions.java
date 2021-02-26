@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import pages.AfterLogin;
 import pages.CreateAccountPage;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -18,10 +19,11 @@ import java.util.List;
 public class CreateAccountStepDefinitions {
 
     CreateAccountPage gmiCreateAccountPage = new CreateAccountPage();
+    AfterLogin gmiAfterLoginPage = new AfterLogin();
 
     @When("user clicks on Manage Account")
     public void user_clicks_on_Manage_Account() {
-        gmiCreateAccountPage.manageAccounts.click();
+        gmiAfterLoginPage.manageAccounts.click();
     }
 
     @When("user clicks on Create a new Account")
