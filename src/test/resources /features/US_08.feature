@@ -1,6 +1,6 @@
 @gmibankpasswordsegment
 
-Feature:US_Story08 Password segment on Homepage should be editable
+Feature: US_Story08 Password segment on Homepage should be editable
   Background:
     Given Go to given URL
     When  Go to User Login
