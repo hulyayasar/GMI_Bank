@@ -19,11 +19,6 @@ public class CreateAccountStepDefinitions {
 
     CreateAccountPage gmiCreateAccountPage = new CreateAccountPage();
 
-    @When("user clicks on My Operations")
-    public void user_clicks_on_My_Operations() {
-        gmiCreateAccountPage.myOperations.click();
-    }
-
     @When("user clicks on Manage Account")
     public void user_clicks_on_Manage_Account() {
         gmiCreateAccountPage.manageAccounts.click();
@@ -76,12 +71,12 @@ public class CreateAccountStepDefinitions {
 
     @When("user enters Create Date for present")
     public void user_enters_Create_Date_for_present() {
-        gmiCreateAccountPage.createDate.sendKeys("21.02.2021" + Keys.TAB + "04:57PM");
+        gmiCreateAccountPage.createDate.sendKeys("02.08.2021" + Keys.TAB + "04:57PM");
     }
 
     @When("user enters Closed Date earlier than Create Date")
     public void user_enters_Closed_Date_earlier_than_Create_Date() {
-        gmiCreateAccountPage.closedDate.sendKeys("21.01.2021" + Keys.TAB + "04:57PM");
+        gmiCreateAccountPage.closedDate.sendKeys("01.08.2021" + Keys.TAB + "04:57PM");
     }
 
     @Then("verify the description required message")
@@ -127,13 +122,13 @@ public class CreateAccountStepDefinitions {
     @Then("verify the Closed Date")
     public void verify_the_Closed_Date() {
         String actClosedDate = gmiCreateAccountPage.closedDate.getAttribute("value");
-        Assert.assertTrue(actClosedDate.equals("2021-01-21T16:57"));
+        Assert.assertTrue(actClosedDate.equals("2021-01-08T16:57"));
     }
 
     @Then("verify the present date")
     public void verify_the_present_date() {
         String actClosedDate = gmiCreateAccountPage.createDate.getAttribute("value");
-        Assert.assertTrue(actClosedDate.equals("2021-02-21T16:57"));
+        Assert.assertTrue(actClosedDate.equals("2021-02-08T16:57"));
     }
 
     @When("user clicks on the save button")
