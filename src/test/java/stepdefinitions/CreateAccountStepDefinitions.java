@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import pages.AfterLogin;
 import pages.CreateAccountPage;
-import utilities.ConfigReader;
+
 import utilities.Driver;
 import utilities.ReusableMethods;
 
