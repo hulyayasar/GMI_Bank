@@ -12,14 +12,16 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml"
         },
 
-        features = "src\\test\\resources\u2028\\features",
+        features = "src/test/resources\u2028/features",
 
 
         glue = "stepdefinitions",
-        tags = "@gmibankpasswordsegment",
+        tags = "@us_002",
         dryRun = false
 )
 public class Runner {
 
 }
+
+//"src/test/resources\u2028/features"
 
