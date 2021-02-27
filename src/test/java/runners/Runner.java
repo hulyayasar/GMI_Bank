@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
 
         glue = "stepdefinitions",
 
-        tags = "@register",
+        tags = "@createNewCustomer",
         dryRun = false
         )
 public class Runner {
