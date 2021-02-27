@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="489.035">
+<testcase classname="US006" name="User should be changing all data" time="488.378">
+<failure message="The following asserts failed:&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given user navigate the url.................................................passed
+And click Sing in button....................................................passed
+And enter valid credentials.................................................passed
+Then click for  Sing in button..............................................passed
+Then User clicks profile image..............................................passed
+And User clicks User Info...................................................passed
+And User change firstname...................................................passed
+And User clear firstname....................................................passed
+And User change lastname....................................................passed
+And User clear lastname.....................................................passed
+And User change email.......................................................passed
+And User clear first extension..............................................passed
+And User clear  second extension............................................passed
+And User change language....................................................passed
+And User clicks save button.................................................passed
+And User change firstname...................................................passed
+And User clear firstname....................................................passed
+And User change lastname....................................................passed
+And User clear lastname.....................................................passed
+And User change email.......................................................passed
+And User clear first extension..............................................failed
+And User clear  second extension............................................skipped
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefinitions.UserInfo_StepDef.user_clear_first_extension(UserInfo_StepDef.java:291)
+	at ✽.User clear first extension(file:///C:/Users/KURSAT/IdeaProjects/gmibank/src/test/resources%E2%80%A8/features/US06_TC001.feature:52)
+]]></failure>
+</testcase>
+</testsuite>
