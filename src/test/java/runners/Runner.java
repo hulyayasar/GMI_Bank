@@ -16,10 +16,16 @@ import org.junit.runner.RunWith;
 
 
         glue = "stepdefinitions",
-        tags = "@gmibankpasswordsegment",
+
+
+
+        tags = "",
+
         dryRun = false
 )
 public class Runner {
 
 }
+
+//"src/test/resources\u2028/features"
 

@@ -1,37 +1,53 @@
 @gmibankpasswordsegment
 
 Feature:US_Story08 Password segment on Homepage should be editable
-  Background:
-    Given Go to given URL
-    When  Go to User Login
-    And   Click Login Button
-    And   Click Sign In Button
-    And   Select Password button
+
+  Background:User signs in
+    Given user navigate the url
+    And click Sing in button
+    And   Enter username
+    And   Enter password
+    Then click for  Sing in button
 
   @TC_Valid_0801
-
   Scenario: The old password should not be used
-
-    Given To enter Current Password credential
-    And   To enter the Current Password in New password Box
-    And   To enter to Current Password in New password confirmation Box
-    And   To click to Save Button
-    Then  Assert that Save Alert Negative
-
+    Given  Click to account menu
+    And   Click to password segment button
+    Then  Verifies there is old password password
   @TC_Valid_0803
-  Scenario:There should be at least 1 Uppercase char for stronger password and see the level chart change accordingly
-    And  To enter the Password with one uppercase adding to New password box
-    And   To enter to UpperCase Password in New password confirmation Box
-    And  Assert password strength level3
-    And   To click to Save Button
-
+  Scenario Outline: New password should have at least 1 "<value1>" to change password strength color of chart color
+    Given Click to account menu
+    And   Click to password segment button
+    Then  Enter new passwords "<validPassword1>" and verifies that  should be at least one "<value1>"
+    Examples:
+      |validPassword1                         |value1       |
+      |NewPasswordAllLowercase                |ashleyy123   |
+  @TC_Valid_0805
+  Scenario Outline:New password should have at least 1 "<value2>" to change password strength color of chart color
+    Given Click to account menu
+    And   Click to password segment button
+    Then  Enter new passwords "<validPassword2>" and verifies that  should be at least one "<value2>"
+    Examples:
+      |validPassword2                         |value2       |
+      |NewPasswordWithOneUpperCase            |Ashleyy1234  |
   @TC_Valid_0807
-  Scenario:There should be at least 1 digit and see the level  chart change accordingly
-    And   To enter the New Password to New password box
-    And   To enter the Password with more one digit adding to New password box
-    And   Assert password strength level2
+  Scenario Outline:New password should have at least 1 "<value3>" to change password strength color of chart color
+    Given Click to account menu
+    And   Click to password segment button
+    Then  Enter new passwords "<validPassword3>" and verifies that  should be at least one "<value3>"
+    Examples:
+      |validPassword3                         |value3       |
+      |NewPasswordWithMoreOneDigit            |Ashleyy12    |
+  @TC_Valid_0809
+  Scenario Outline:New password should have at least 1 "<value4>" to change password strength color of chart color
+    Given Click to account menu
+    And   Click to password segment button
+    Then  Enter new passwords "<validPassword4>" and verifies that  should be at least one "<value4>"
+    Examples:
+      |validPassword4                         |value4       |
+      |NewPasswordWithMoreSpecialChar         |Ashleyy12$   |
   @TC_Valid_0811
-  Scenario: There should be at least 7 chars for a stronger password
-    And   To enter the New Password to New password box
-    And   To enter the valid Password has least 7 chars to New password box
-    And   Assert password strength level5
+  Scenario:New password should be confirmed
+    Given Click to account menu
+    And   Click to password segment button
+    Then  Verifies new valid password confirmation
