@@ -127,6 +127,14 @@ public class CreateNewCustomerPage {
     public WebElement checkBoxZelle;
 
 
+    @FindBy(linkText = "Create a new Customer")
+    public WebElement createANewCustomer ;
+    //<input name="search-ssn" placeholder="000-00-0000" id="search-ssn" type="text" class="form-control is-touched is-pristine av-valid form-control" value="">
+    @FindBy(xpath = "//input[@id='search-ssn']")
+    public WebElement searchCustomer;
+    //<button type="button" class="btn btn-secondary">Search</button>
+    @FindBy(xpath = "//button[normalize-space()='Search']")
+    public WebElement searchButton;
 
 
 

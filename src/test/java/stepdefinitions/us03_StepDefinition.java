@@ -5,11 +5,11 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 
 import org.testng.asserts.SoftAssert;
-import pages.Registration_Page;
+import pages.RegistrationPage;
 
 public class us03_StepDefinition {
     String password, confirmationPassword;
-    Registration_Page registrationPage = new Registration_Page();
+    RegistrationPage registrationPage = new RegistrationPage();
 
     @Then("user writes the password  {string}")
     public void userWritesThePassword(String string) {
