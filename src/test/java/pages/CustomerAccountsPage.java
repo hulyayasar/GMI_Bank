@@ -36,7 +36,8 @@ public class CustomerAccountsPage {
     @FindBy(xpath = "//a[@class='d-flex align-items-center dropdown-toggle nav-link']")
     public WebElement dropdown;
 
-    @FindBy(xpath = "(//*[.='View Transaction'])[1]")
+    //@FindBy(xpath = "(//*[.='View Transaction'])[1]")
+    @FindBy(xpath = "//button[@class='btn btn-success btn-sm']")
     public WebElement viewTransaction ;
    // @FindBy(linkText= "View Transaction")
     //public WebElement viewTransaction;
