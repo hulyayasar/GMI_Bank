@@ -1,4 +1,4 @@
-#@theLastBugBenders
+@theLastBugBenders
 Feature: An Employee can manage Customer
   Background:  User goes to the home page and navigates to the manage customer link
     #Given User goes to the home page and log in
