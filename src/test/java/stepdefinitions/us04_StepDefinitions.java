@@ -36,6 +36,12 @@ public class us04_StepDefinitions {
 
     }
 
+    @Given("enter admin valid credentials")
+    public void enter_admin_valid_credentials() {
+        loginpage.userName.sendKeys(ConfigReader.getProperty("adminUsername"));
+        loginpage.password.sendKeys(ConfigReader.getProperty("adminPassword"));
+    }
+
     @Then("click for  Sing in button")
     public void click_for_Sing_in_button() {
      loginpage.SinginButton.click();
