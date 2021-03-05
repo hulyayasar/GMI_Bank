@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="gmibank" />
-        <module name="gmibank" />
+        <module name="gmiBankTheLastBugBenders" />
       </profile>
     </annotationProcessing>
   </component>
