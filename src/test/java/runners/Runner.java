@@ -18,10 +18,10 @@ import org.junit.runner.RunWith;
         glue = "stepdefinitions",
 
 
-        tags = "@Applicants",
+        tags = "@us26",
 
 
-        dryRun = false
+        dryRun = true
         )
 public class Runner {
 
