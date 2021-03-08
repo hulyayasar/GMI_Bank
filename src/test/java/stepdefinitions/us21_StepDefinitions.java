@@ -4,6 +4,7 @@ import io.cucumber.java.en.Given;
 import io.restassured.response.Response;
 import pojos.Country;
 import utilities.ConfigReader;
+import utilities.Driver;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -22,7 +23,7 @@ public class us21_StepDefinitions {
     @Given("Get request from api {string} should turn a response")
     public void get_request_from_api_should_turn_a_response(String endPoint) {
         response = given().
-                header("Authorization", "Bearer " + "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtMzVnbWkiLCJhdXRoIjoiUk9MRV9FTVBMT1lFRSIsImV4cCI6MTYxNTE5MDczMX0.DViLQpWJZOagjj0kVn4u_fMA6kWRImCFlxh3MR8MgmLj3bZuyC_wyU30XaL-yvkLsLPQmrJ2lAl3PxT9yvZF7w").
+                header("Authorization", "Bearer " + ConfigReader.getProperty("api_bearer_token")).
                 accept("application/JSON").when().get(endPoint);
         response.prettyPrint();
 
