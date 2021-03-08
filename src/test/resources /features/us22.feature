@@ -3,6 +3,8 @@
     Scenario Outline: Tc01 User reads all states
       Given send the request get the response using the end point "https://www.gmibank.com/api/tp-states"
       And converting response body JSON Data to JAVA Object
+      And storing all data to into file
+#      Then user validates data for all states from the file
       Then user validates data for all states "<ExpectedStates>"
 
       Examples:

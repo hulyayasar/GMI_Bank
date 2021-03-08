@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.http.ContentType;
@@ -7,9 +8,11 @@ import io.restassured.response.Response;
 import org.junit.Assert;
 import pojos.States;
 import utilities.ConfigReader;
+import utilities.ReadTxt;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
@@ -39,7 +42,7 @@ public class us22_StepDefinitions {
         System.out.println(expectedState);
         int c=0;
         for (int i = 0; i < StatesList.size(); i++) {
-           if(((Map)StatesList.get(i)).get("name").equals("New Hampshire")){
+           if(((Map)StatesList.get(i)).get("name").equals("Manisa")){
                c++;
                Assert.assertTrue(true);
                break;
@@ -49,6 +52,18 @@ public class us22_StepDefinitions {
             Assert.assertTrue(false);
 
         }
+        List<States> expectedStateslist = ReadTxt.returnAllStates2("States.txt");
+        System.out.println( "bamm " + expectedStateslist);
+        Assert.assertTrue(ReadTxt.returnAllStates3("States.txt").contains(expectedState));
 
+    }
+
+    @And("storing all data to into file")
+    public void storingAllDataToIntoFile() {
+
+    }
+
+    @Then("user validates data for all states from the file")
+    public void userValidatesDataForAllStatesFromTheFile() {
     }
 }
