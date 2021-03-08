@@ -1,12 +1,13 @@
-//package utilities;
-//
-//import gmibank.pojos.Customer;
-//import gmibank.pojos.States;
-//
-//import java.io.BufferedWriter;
-//import java.io.FileWriter;
-//
-//public class WriteToTxt {
+package utilities;
+
+import pojos.States;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class WriteToTxt {
+
+
 //
 //    public static void saveDataInFile(String fileName, Customer[] customers)  {
 //        try {
@@ -66,18 +67,18 @@
 //        }
 //    }
 //
-//    public static void saveAllStates(String fileName, States[] states)  {
-//        try {
-//            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true));
-//
-//            for (int i=0; i<states.length; i++)
-//                writer.append(states[i].getName()+" , "+states[i].getId()+"\n");
-//
-//            writer.close();
-//        } catch(Exception e){
-//
-//        }
-//    }
+    public static void saveAllStates(String fileName, States[] states)  {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true));
+
+            for (int i=0; i<states.length; i++)
+                writer.append(states[i].getName()+" , "+states[i].getId()+"\n");
+
+            writer.close();
+        } catch(Exception e){
+
+        }
+    }
 //
 //
 //
@@ -95,4 +96,4 @@
 //    }
 //
 //
-//}
+}
