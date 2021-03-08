@@ -90,18 +90,18 @@ Feature: Login page should not be accessible with invalid credentials
 #     |username|password|
 #     |||
 
-  @TC_0007
-  Scenario Outline: TC_0007_User with invalid credentials should be given an option to reset their password
-    When user enters the username "<username>"
-    When user enters the password "<password>"
-    And click on the submit button
-    And verify the error message contains "Failed"
-    And click on the reset option
-    Then verify the resetPassword title is "Reset your password"
-
-    Examples: invalid username and valid password
-      |username|password|
-      |hey   |hey   |
+#  @TC_0007
+#  Scenario Outline: TC_0007_User with invalid credentials should be given an option to reset their password
+#    When user enters the username "<username>"
+#    When user enters the password "<password>"
+#    And click on the submit button
+#    And verify the error message contains "Failed"
+#    And click on the reset option
+#    Then verify the resetPassword title is "Reset your password"
+#
+#    Examples: invalid username and valid password
+#      |username|password|
+#      |hey   |hey   |
 
   @TC_0008
   Scenario Outline: TC_0008_User with invalid credentials should be given an option to reset their password
