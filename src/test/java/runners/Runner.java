@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
         strict = true,
         plugin = {
                 "html:target/default-cucumber-reports",
-                "json:target/json-report/cucumber.json",
+                "json:target/json-report/cucumber.json", 
                 "junit:target/xml-report/cucumber.xml"
         },
 
@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
         glue = "stepdefinitions",
 
 
-        tags = "@theLastBugBenders",
+        tags = "@TCEmail",
 
 
         dryRun = false

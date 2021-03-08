@@ -45,7 +45,3 @@ Feature: US006
     And  User clear first extension
     And  User clear  second extension
     And  User quits
-
-
-
-
