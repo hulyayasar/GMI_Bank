@@ -18,8 +18,8 @@ import static io.restassured.RestAssured.*;
 
 public class us21_StepDefinitions {
 
-    List<Map<String,Object>> listOfCountries;
-    HashMap<String,Object> putCountry;
+    List<Map<String, Object>> listOfCountries;
+    HashMap<String, Object> putCountry;
     Response response;
     Country expectedTestData = new Country();
 
@@ -38,19 +38,27 @@ public class us21_StepDefinitions {
     }
 
 
-
-
     @And("get the information of {int}th country")
     public void getTheInformationOfThCountry(int country) {
-        System.out.println(listOfCountries.get(country));;
+        System.out.println(listOfCountries.get(country));
+        ;
     }
-
 
 
     @Then("verify the name of the {int}th country is {string}")
     public void verifyTheNameOfTheThCountryIs(int country, String countryName) {
-        Assert.assertEquals(listOfCountries.get(country).get("name"),countryName);
+        Assert.assertEquals(listOfCountries.get(country).get("name"), countryName);
     }
 
+    @And("get the information of the country with {string} id")
+    public void getTheInformationOfTheCountryWithId(String id) {
 
+        int count = 0;
+        for (int i = 0; i <= listOfCountries.size() - 1; i++) {
+            if (listOfCountries.get(i).get("id").toString().equals(id) ) {
+                count++;
+            }
+        }
+        Assert.assertTrue(count==1);
+    }
 }
