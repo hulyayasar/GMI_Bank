@@ -17,7 +17,7 @@ public class us04_StepDefinitions {
 
     @Given("user navigate the url")
     public void user_navigate_the_url() {
-       Driver.getDriver().get(ConfigReader.getProperty("url"));
+        Driver.getDriver().get(ConfigReader.getProperty("url"));
 
     }
 
@@ -31,8 +31,8 @@ public class us04_StepDefinitions {
 
     @Given("enter valid credentials")
     public void enter_valid_credentials() {
-     loginpage.userName.sendKeys(ConfigReader.getProperty("employeeUsername"));
-     loginpage.password.sendKeys(ConfigReader.getProperty("employeePassword"));
+        loginpage.userName.sendKeys(ConfigReader.getProperty("employeeUsername"));
+        loginpage.password.sendKeys(ConfigReader.getProperty("employeePassword"));
 
     }
 
@@ -44,7 +44,7 @@ public class us04_StepDefinitions {
 
     @Then("click for  Sing in button")
     public void click_for_Sing_in_button() {
-     loginpage.SinginButton.click();
+        loginpage.SinginButton.click();
 
     }
     @Then("verify log in the personal page")
@@ -55,7 +55,7 @@ public class us04_StepDefinitions {
     }
     @Then("click cencel button")
     public void click_cencel_button() {
-       loginpage.CancelButton.click();
+        loginpage.CancelButton.click();
     }
 
 
