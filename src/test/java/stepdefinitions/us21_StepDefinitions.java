@@ -3,6 +3,7 @@ package stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.restassured.response.Response;
 import pojos.Country;
+import utilities.ConfigReader;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,11 +21,10 @@ public class us21_StepDefinitions {
 
     @Given("Get request from api {string} should turn a response")
     public void get_request_from_api_should_turn_a_response(String endPoint) {
-
         response = given().
                 header("Authorization", "Bearer " + "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtMzVnbWkiLCJhdXRoIjoiUk9MRV9FTVBMT1lFRSIsImV4cCI6MTYxNTE5MDczMX0.DViLQpWJZOagjj0kVn4u_fMA6kWRImCFlxh3MR8MgmLj3bZuyC_wyU30XaL-yvkLsLPQmrJ2lAl3PxT9yvZF7w").
                 accept("application/JSON").when().get(endPoint);
-        //response.prettyPrint();
+        response.prettyPrint();
 
     }
 
@@ -34,22 +34,22 @@ public class us21_StepDefinitions {
         System.out.println(listOfCountries);
     }
 
-    @Given("User sends put request id with the name {string} at the URI {string}")
-    public void user_sends_put_request_with_the_name_at_the_URI(String updCountryName, String endPoint) {
-
-        putCountry = new HashMap<>();
-//        putCountry.put("id", 22320);
-        putCountry.put("name", updCountryName);
-        putCountry.put("states", null);
-        System.out.println(putCountry);
-
-        Response putResponse = given().
-                header("Authorization", "Bearer " + "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtMzVnbWkiLCJhdXRoIjoiUk9MRV9FTVBMT1lFRSIsImV4cCI6MTYxNTE5MDczMX0.DViLQpWJZOagjj0kVn4u_fMA6kWRImCFlxh3MR8MgmLj3bZuyC_wyU30XaL-yvkLsLPQmrJ2lAl3PxT9yvZF7w").
-                body(putCountry).
-                accept("application/JSON").when().put(endPoint);
-
-        putResponse.prettyPrint();
-
-    }
+//    @Given("User sends put request id with the name {string} at the URI {string}")
+//    public void user_sends_put_request_with_the_name_at_the_URI(String updCountryName, String endPoint) {
+//
+//        putCountry = new HashMap<>();
+////        putCountry.put("id", 22320);
+//        putCountry.put("name", updCountryName);
+//        putCountry.put("states", null);
+//        System.out.println(putCountry);
+//
+//        Response putResponse = given().
+//                header("Authorization", "Bearer " + "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtMzVnbWkiLCJhdXRoIjoiUk9MRV9FTVBMT1lFRSIsImV4cCI6MTYxNTE5MDczMX0.DViLQpWJZOagjj0kVn4u_fMA6kWRImCFlxh3MR8MgmLj3bZuyC_wyU30XaL-yvkLsLPQmrJ2lAl3PxT9yvZF7w").
+//                body(putCountry).
+//                accept("application/JSON").when().put(endPoint);
+//
+//        putResponse.prettyPrint();
+//
+//    }
 
 }

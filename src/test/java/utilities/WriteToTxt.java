@@ -1,12 +1,8 @@
-//package utilities;
-//
-//import gmibank.pojos.Customer;
-//import gmibank.pojos.States;
-//
-//import java.io.BufferedWriter;
-//import java.io.FileWriter;
-//
-//public class WriteToTxt {
+package utilities;
+
+public class WriteToTxt {
+
+
 //
 //    public static void saveDataInFile(String fileName, Customer[] customers)  {
 //        try {
@@ -95,4 +91,4 @@
 //    }
 //
 //
-//}
+}
