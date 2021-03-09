@@ -13,7 +13,7 @@ Feature: System should allow user to manage their account
 
     Then click on Transfer money
     Then verify user have at least 2 accounts
-    And User quits
+   And User quits
 
   @TC_02
   Scenario: US_015TC_03User(customer) can transfer money with valid cridentials
