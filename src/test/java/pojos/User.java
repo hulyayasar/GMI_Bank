@@ -97,4 +97,3 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
     }
 
 
->>>>>>> master
