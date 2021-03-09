@@ -3,5 +3,5 @@ Feature: Validate customer info
   Scenario: Read all customers
     Given user go to api end point "https://www.gmibank.com/api/tp-customers"
     And read all customer and set create pojo classes
-    Then validates the data
+    #Then validates the data
 

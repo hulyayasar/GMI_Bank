@@ -1,102 +1,94 @@
 package stepdefinitions;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.http.ContentType;
-import io.restassured.mapper.ObjectMapper;
+
 import io.restassured.response.Response;
+import org.junit.Assert;
 import pojos.Customer;
+import pojos.States;
+import pojos.us23_Applicants;
 import utilities.ConfigReader;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import static io.restassured.RestAssured.*;
-//import utilities.ConfigurationReader;
+
 public class Customer_StepDefinitions {
     Response response;
-    //String filePath=ConfigReader.getProperty("filePathCustomer");
-    //String bearerToken= ConfigReader.getProperty("api_bearer_token");
-    //Customer[] customers;
+    String filePath=ConfigReader.getProperty("filePathCustomer");
+    List<Map<String, Object>> CustomerList;
+    Customer[] customers;
 
     @Given("user go to api end point {string}")
-    public void user_go_to_api_end_point(String string) {
+    public void user_go_to_api_end_point(String url) {
 
-        // Response response=given().headers("Authorization",
-        // "Bearer " + ConfigurationReader.getProperty("api_bearer_token"),
-        //"Content-Type", ContentType.JSON,
-        //"Accepct",ContentType.JSON).when()
-        //.get(url)
-        //.then()
-        //.contentType(ContentType.JSON)
-        //.statusCode(200)
-        //.extract()
-        //.response();
+         response=given().headers("Authorization",
+         "Bearer " + ConfigReader.getProperty("api_bearer_token"),
+        "Content-Type", ContentType.JSON,
+        "Accepct",ContentType.JSON).when()
+        .get(url)
+        .then()
+        .contentType(ContentType.JSON)
+        .statusCode(200)
+        .extract()
+        .response();
 
-        //response.prettyPrint();
+        response.prettyPrint();
 
     }
 
     @Given("read all customer and set create pojo classes")
-    public void read_all_customer_and_set_create_pojo_classes() {
-        // ObjectMapper objectMapper=new ObjectMapper();
-        // Customer [] customer=objectMapper.readValue(response.asString(),Customer[].class);//need to throws exception
+    public void read_all_customer_and_set_create_pojo_classes() throws IOException {
 
-        //System.out.println(customer[10].getId());
-        //System.out.println(customer[11].getFirstName());
-        //System.out.println(customer[12].getLastName());
-        //System.out.println(customer[13].getMiddleInitial());
-        //System.out.println(customer[14].getEmail());
-        //System.out.println(customer[15].getMobilePhoneNumber());
-        //System.out.println(customer[16].getPhoneNumber());zipCode,Address,City
-        //System.out.println(customer[17].getZipCode());
-        //System.out.println(customer[18].getAddress());
-        //System.out.println(customer[19].getCity());
-        //System.out.println(customer[19].getSsn());
-        //System.out.println(customer[19].getCreateDate());
-        //System.out.println(customer[19].getZelleEnrolled());
-        //System.out.println(customer[19].getCountry());
-        //System.out.println(customer[19].getState());
-        //System.out.println(customer[19].getUser());
-
-
-
-
-        // for(int i=0; i<customer.lenght; i++){
-        // System.out.println(customer[i].getCustomer);
-
+       CustomerList = response.as(ArrayList.class);
+        System.out.println(CustomerList);
     }
-        //for(int i=0; i<customer.lenght; i++){
-//}
-        //if(customer[0].getUser!=null){
-           //System.out.println(customer[i]);
-
-        //}
-    //}
-                //sets the data and saves
-        //WriteToTxt.saveDataInFileWithAllCustomerInfo(ConfigurationReader.getProperty("filePath_All_Customer_Data"),customers);
-//        WriteToTxt.saveDataInFile("NewFile.txt ",customers);
-//    }
-
-    @Then("validates the data")
+        @Then("validates the data")
     public void validates_the_data() {
+           String expectedName="Jeffrey";
+           Assert.assertEquals((Map)(CustomerList.get(0)).get(1),expectedName);
+            System.out.println((Map)(CustomerList.get(0)).get(1));
 
-        //       List<Customer> list= ReadTxt.returnCustomerSNN("filepath");
-        //
-        //       for(int i=0;i<list.size();i++){
-        //           System.out.println(list.get(i).getSsn());
-        //       }
-        //       boolean isdisplayed=list.contains("888-22-4444");
-        //       Assert.assertTrue(isdisplayed);
+            String expectedssn="476-90-9374";
+            Assert.assertEquals((Map)(CustomerList.get(0)).get(1),expectedssn);
+            System.out.println((Map)(CustomerList.get(0)).get(1));
 
-        //       Second way of doing it
-        //List<String>expectedSSN=new ArrayList<>();
-        //expectedSSN.add("");
 
-        //List<String>actualSSN=ReadTxt.returnCustomerSNN("filepath2");
-        //assert.assertTrue("The data provided is not matching!!!,actualSSN.containsAll(expectedSSN));
+           Map<String,Object> expectedCountry=new HashMap<>();
+           expectedCountry.put("id",22330);
+           expectedCountry.put("name","Russland");
+           States states=new States();
+            expectedCountry.put("states",states);
+            Assert.assertEquals((Map)(CustomerList.get(1)).get(14),expectedCountry);
+
+            String expectedState="California";
+            Assert.assertEquals((Map)(CustomerList.get(7)).get(15),expectedCountry);
+
+            Map<String,Object> expectedUser=new HashMap<>();
+            expectedUser.put("id",85376);
+            expectedUser.put("login","dt36");
+            expectedUser.put("firstName","Demo");
+            expectedUser.put("lastName","Team30");
+            expectedUser.put("email","demot36@gmail.com");
+            expectedUser.put("activated",true);
+            expectedUser.put("langKey","en");
+
+            Assert.assertEquals((Map)(CustomerList.get(6)).get(16),expectedUser);
+
+            us23_Applicants us23_applicants=new us23_Applicants();
+            Assert.assertEquals((Map)(CustomerList.get(0)).get(17),us23_applicants);
+
+
+
+        }
+
     }
 
-}
-//config e eklenicekler ve bunlar nerden geliyor?
-//filePath_Customer=
-//filePath_Customer2=
-//fileNameOfCustomer=
-//\src\test\resources
+
