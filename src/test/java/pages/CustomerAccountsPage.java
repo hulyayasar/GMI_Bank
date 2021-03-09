@@ -35,6 +35,12 @@ public class CustomerAccountsPage {
     @FindBy(xpath = "//a[@class='d-flex align-items-center dropdown-toggle nav-link']")
     public WebElement dropdown;
 
+
     @FindBy(xpath = "//button[@class='btn btn-success btn-sm']")
     public WebElement viewTransaction;
 }
+
+
+
+//<a class="dropdown-item" tabindex="0" role="menuitem" href="/customer/tp-customer-accounts/transfer/75193">Transfer Money</a>
+

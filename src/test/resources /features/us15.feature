@@ -32,4 +32,4 @@ Feature: System should allow user to manage their account
 
     Then click on My Accounts
     Then click on view transaction
-    And User quits
+#    And User quits
