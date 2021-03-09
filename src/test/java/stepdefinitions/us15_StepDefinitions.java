@@ -8,6 +8,7 @@ import pages.AfterLogInPage;
 import pages.LogInPage;
 import pages.CustomerAccountsPage;
 import utilities.ConfigReader;
+import utilities.Driver;
 import utilities.ReusableMethods;
 
 import java.util.List;
@@ -30,7 +31,7 @@ public class us15_StepDefinitions {
 
     @Then("click on My Accounts")
     public void click_on_My_Accounts() {
-        ReusableMethods.waitFor(2);
+        //ReusableMethods.waitFor(2);
         afterLoginPage.myAccounts.click();
 
     }
@@ -44,34 +45,35 @@ public class us15_StepDefinitions {
 
     @Then("clicks on from gives account to transfer")
     public void clicks_on_from_gives_account_to_transfer() {
-    customerAccountsPage.fromBox.click();
+
+        customerAccountsPage.fromBox.click();
     }
 
     @Then("clicks on to choose the account to transfer")
     public void clicks_on_to_choose_the_account_to_transfer() {
-    customerAccountsPage.toBox.click();
-    }
+
+        customerAccountsPage.toBox.click();
+        }
 
     @Then("Clicks on balance and gives amount to transfer")
     public void clicks_on_balance_and_gives_amount_to_transfer() {
        customerAccountsPage.balanceBox.sendKeys("5");
     }
 
-
-
     @Then("clicks on make a transfer")
     public void clicks_on_make_a_transfer() {
     customerAccountsPage.transferButton.click();
     }
-
     @Then("click on view transaction")
     public void click_on_view_transaction() {
-    customerAccountsPage.viewTransaction.click();
+
+        customerAccountsPage.viewTransaction.click();
     }
     @Then("verify user have at least {int} accounts")
     public void verify_user_have_at_least_accounts(Integer int1) {
         ReusableMethods.waitForVisibility(customerAccountsPage.fromBox,2);
         Select select=new Select(customerAccountsPage.fromBox);
+        //select.getFirstSelectedOption();
        List<WebElement> list=select.getOptions();
        for (WebElement List : list) {
             String gettext = List.getText();
@@ -85,6 +87,7 @@ public class us15_StepDefinitions {
     @Then("clicks on description {string}")
     public void clicks_on_description(String string) {
         customerAccountsPage.description.sendKeys(string);
+
     }
 // Select select=new Select(moneyTransferPage.fromBox);
 //        List<WebElement> list=select.getOptions();
@@ -134,6 +137,6 @@ public class us15_StepDefinitions {
 //        throw new io.cucumber.java.PendingException();
 //    }
 
-
+//<select name="fromAccountId" required="" id="fromAccountId" class="form-control is-touched is-pristine av-invalid is-invalid form-control"><option value=""></option><option value="76551">INVESTING-76551-17$</option><option value="75476">CHECKING-75476-14$</option><option value="75477">SAVING-75477-14$</option></select>
 
 }
