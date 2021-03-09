@@ -33,7 +33,7 @@ public class ReadTxt {
         }
         return all;
     }
-//
+    //
 //
 //    public static List<Customer> returnCustomer(String filePath){
 //        List<Customer>all = new ArrayList<>();
@@ -135,7 +135,7 @@ public class ReadTxt {
         }
         return all;
     }
-//
+    //
 //    public static List<String> returnCustomerSNNList(String filePath){
 //        List<String>all = new ArrayList<>();
 //        try(BufferedReader br = new BufferedReader(new FileReader(filePath))) {

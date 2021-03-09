@@ -5,6 +5,8 @@ import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.Assert;
+import utilities.ConfigReader;
+
 import java.util.HashMap;
 import java.util.Map;
 import static io.restassured.RestAssured.given;
@@ -21,7 +23,7 @@ public class us26_StepDefinitions {
        putCountry.put("states",null);
 
         response = given().
-                headers("Authorization", "Bearer " + "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtMzVnbWkiLCJhdXRoIjoiUk9MRV9FTVBMT1lFRSIsImV4cCI6MTYxNTE5MDczMX0.DViLQpWJZOagjj0kVn4u_fMA6kWRImCFlxh3MR8MgmLj3bZuyC_wyU30XaL-yvkLsLPQmrJ2lAl3PxT9yvZF7w",
+                headers("Authorization", "Bearer " +  ConfigReader.getProperty("api_bearer_token"),
                         "Content-Type",ContentType.JSON,
                         "Accept", ContentType.JSON).when().body(putCountry).put(endPoint).then().
                 contentType(ContentType.JSON).extract().response();
@@ -36,7 +38,7 @@ public class us26_StepDefinitions {
     @Then("validate updated country")
     public void validate_updated_country() {
         response =  given().
-                headers("Authorization", "Bearer " + "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtMzVnbWkiLCJhdXRoIjoiUk9MRV9FTVBMT1lFRSIsImV4cCI6MTYxNTE5MDczMX0.DViLQpWJZOagjj0kVn4u_fMA6kWRImCFlxh3MR8MgmLj3bZuyC_wyU30XaL-yvkLsLPQmrJ2lAl3PxT9yvZF7w",
+                headers("Authorization", "Bearer " +   ConfigReader.getProperty("api_bearer_token"),
                         "Content-Type",ContentType.JSON,
                         "Accept", ContentType.JSON).when().get("https://www.gmibank.com/api/tp-countries").then().contentType(ContentType.JSON).extract().response();
 
