@@ -14,6 +14,7 @@ import utilities.ReadTxt;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
@@ -22,11 +23,13 @@ public class us24_us27_StepDefinitions {
 
     Response response;
     States[] states;
+    ArrayList listOfStates;
     String filePath = "States.txt";
-    int deletedID=0;
+    int deletedID;
 
     @Given("user sets states to response using {string}")
     public void user_sets_states_to_response_using(String url) {
+
         response =given().headers(
                 "Authorization",
                 "Bearer " + ConfigReader.getProperty("api_bearer_token"),
@@ -47,8 +50,10 @@ public class us24_us27_StepDefinitions {
     public void user_deserializes_all_states_to_pojo() throws Exception{
         ObjectMapper obj = new ObjectMapper();
         states = obj.readValue(response.asString(),States[].class);
-        System.out.println(states[0].getName());
-        System.out.println(Arrays.toString(states));
+        System.out.println("New Created State: " + states[0].getName());
+//        System.out.println(Arrays.toString(states));
+//        listOfStates = response.as(ArrayList.class);
+//        System.out.println("here" + listOfStates);
 
     }
 
@@ -85,6 +90,7 @@ public class us24_us27_StepDefinitions {
 
     @Given("user provides api end point to delete states using {string} and its extension {string}")
     public void user_provides_api_end_point_to_delete_states_using_and_its_extension(String endPoint, String id) {
+        System.out.println(endPoint+"/"+deletedID);
         response = given().headers(
                 "Authorization",
                 "Bearer " + ConfigReader.getProperty("api_bearer_token"),
@@ -93,7 +99,7 @@ public class us24_us27_StepDefinitions {
                 "Accept",
                 ContentType.JSON)
                 .when().body(StateJson.CREATE_STATE)
-                .delete(endPoint+deletedID)
+                .delete(endPoint+ "/"+deletedID)
                 .then()
                 .extract()
                 .response();
@@ -102,16 +108,17 @@ public class us24_us27_StepDefinitions {
 
     @And("user deletes the created state")
     public void userDeletesTheCreatedState() {
-
-
-
             int count = 0;
-        System.out.println(Arrays.toString(states));
-            for (int i = 0; i <= states.length ; i++) {
-                if (states[i].getName().equals("Alaska") ) {
+
+            for (int i = 0; i <= states.length-1 ; i++) {
+                //System.out.println("here");
+                //System.out.println(states.length);//1312
+                if (!states[i].getName().equals("Alaska") ) {
+                    System.out.println(states[i].getName());
                    deletedID = states[i].getId();
                     count++;
-                    System.out.println(count + deletedID);
+                    System.out.println(count + " " + deletedID);
+                    break;
                 }
             }
          //   Assert.assertTrue(count==1);
