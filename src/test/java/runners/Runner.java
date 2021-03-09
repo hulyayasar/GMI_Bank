@@ -22,10 +22,11 @@ import org.junit.runner.RunWith;
 
 
 
-        tags = "@us22",
+        tags = "@db1",
 
 
-        dryRun = false
+        dryRun =false
+
         )
 public class Runner {
 
