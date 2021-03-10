@@ -1,5 +1,5 @@
-@database
-  Feature:"All users' info should be retrieved by database and validated"
+@database @country
+  Feature: US29 "All users' info should be retrieved by database and validated"
     Background: Connection with DB
       Given User creates a conneciton with db using "jdbc:postgresql://157.230.48.97:5432/gmibank_db" , "techprodb_user" and "Techpro_@126""
     Scenario Outline: Read data using column name

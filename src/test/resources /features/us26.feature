@@ -1,4 +1,4 @@
-@US26
+@US26 @country
 Feature: US26 System should allow to update countries using api end point
   "https://www.gmibank.com/api/tp-countries"
 
