@@ -14,10 +14,9 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources\u2028/features",
 
-
         glue = "stepdefinitions",
 
-        tags = "@US20_TC01",
+        tags = "@country",
 
         dryRun = false
 )
