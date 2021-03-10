@@ -11,7 +11,7 @@ Feature: US21 System should allow to read all countries info using api end point
     Given Get request from api "https://www.gmibank.com/api/tp-countries" should turn a response
     And json message is deserialized by the system
     And get the information of 10th country
-    Then verify the name of the 10th country is "Porto Rico"
+    Then verify the name of the 10th country is "KENYA"
 
   @TC2103
   Scenario: TC2103 query of specific country by id
