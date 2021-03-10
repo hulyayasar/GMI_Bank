@@ -7,5 +7,6 @@ Feature: System should allow to create new countries using api end point
     Given US25 System should allow to create new countries using api end point "https://www.gmibank.com/api/tp-countries" "<name>"
     Then validate created country
     Examples:
-      |name | id |
-      |Freedom| 99999|
+      |name |
+      |FreeWorld|
+      |FairLand|
