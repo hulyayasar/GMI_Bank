@@ -13,6 +13,15 @@ public class us23_Applicants {
     private int userId;
     private String userName;
     private String email;
+    private String createDate;
+
+    public String getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(String createDate) {
+        this.createDate = createDate;
+    }
 
     public int getId() {
         return id;
@@ -85,4 +94,6 @@ public class us23_Applicants {
     public void setEmail(String email) {
         this.email = email;
     }
+
+
 }
