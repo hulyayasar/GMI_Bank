@@ -7,5 +7,5 @@ Feature: US26 System should allow to update countries using api end point
    Given US26 System should allow to update countries using api end point "https://www.gmibank.com/api/tp-countries" "<name>" and its extension "<id>"
    Then validate updated country
    Examples:
-     |name | id |
-     |Freedom| 22321|
+     |name |
+     |FreeWorld|
