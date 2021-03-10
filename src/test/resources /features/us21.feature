@@ -1,4 +1,4 @@
-@US21
+@US21 @country
 Feature: US21 System should allow to read all countries info using api end point
   "https://www.gmibank.com/api/tp-countries"
 
@@ -11,12 +11,12 @@ Feature: US21 System should allow to read all countries info using api end point
     Given Get request from api "https://www.gmibank.com/api/tp-countries" should turn a response
     And json message is deserialized by the system
     And get the information of 10th country
-    Then verify the name of the 10th country is "Himalaya"
+    Then verify the name of the 10th country is "Porto Rico"
 
   @TC2103
   Scenario: TC2103 query of specific country by id
     Given Get request from api "https://www.gmibank.com/api/tp-countries" should turn a response
     And json message is deserialized by the system
-    And get the information of the country with "22321" id
+    And get the information of the country with "22339" id
 
 
