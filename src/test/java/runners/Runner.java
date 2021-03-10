@@ -1,4 +1,5 @@
 package runners;
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -11,7 +12,6 @@ import org.junit.runner.RunWith;
                 "json:target/json-report/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"
         },
-
         features = "src/test/resources\u2028/features",
 
 
@@ -20,7 +20,7 @@ import org.junit.runner.RunWith;
         tags = "@US20_TC01",
 
         dryRun = false
-        )
+)
 public class Runner {
 
 }
