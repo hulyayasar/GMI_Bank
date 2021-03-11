@@ -12,7 +12,6 @@ Feature:US_Story17 System should allow the Admin to manage users
   @TC_1701
   Scenario: Admin can activate a role as user
     Given check Profiles
-#    Given Check Profiles as ROLE_USER
     Then admin deActivates method
     Then  admin activates method
     And admin asserts activation
@@ -21,7 +20,6 @@ Feature:US_Story17 System should allow the Admin to manage users
   @TC_1702
   Scenario: Admin can activate a role as employee
     Given check Profiles
-#    Given check Profiles as ROLE_EMPLOYEE
     Then admin deActivates method
     Then  admin activates method
     And admin asserts activation
@@ -30,7 +28,6 @@ Feature:US_Story17 System should allow the Admin to manage users
   @TC_1703
   Scenario: Admin can activate a role as manager
     Given check Profiles
-#    Given Check Profiles as ROLE_MANAGER
     Then admin deActivates method
     Then admin activates method
     And admin asserts activation
@@ -39,7 +36,6 @@ Feature:US_Story17 System should allow the Admin to manage users
   @TC_1704
   Scenario: Admin can activate a role as admin
     Given check Profiles
-#    Given Check Profiles as ROLE_ADMIN
     Then admin deActivates method
     Then admin activates method
     And admin asserts activation
@@ -47,8 +43,8 @@ Feature:US_Story17 System should allow the Admin to manage users
 
   @TC_1705
   Scenario: Admin can view all user info
-    And admin clicks on view button "ROLE_USER"
-    Then admin asserts all information
+    Given admin clicks on User's view button
+    Then admin asserts User's all information
     Then  User quits
 
   @TC_1706
@@ -68,12 +64,12 @@ Feature:US_Story17 System should allow the Admin to manage users
 
   @TC_1708
   Scenario: Admin can view all admin info
-    And admin clicks on view button "ROLE_ADMIN"
-    Then admin asserts all information
+    Given admin clicks on Admin's view button
+    Then admin asserts Admin's all information
     Then  User quits
 
   @TC_1709
-  Scenario: Admin can edit all user info
+  Scenario: Admin can edit all admin info
     Given admin clicks on edit button "ROLE_ADMIN"
     Then admin changes all user info
     Then  User quits
@@ -88,13 +84,13 @@ Feature:US_Story17 System should allow the Admin to manage users
     And User quits
 
   @TC_1711
-  Scenario: Admin can view all admin info
-    And admin clicks on view button "ROLE_MANAGER"
-    Then admin asserts all information
+  Scenario: Admin can view all manager info
+  Given admin clicks on Manager's view button
+   Then admin asserts Manager's all information
     Then  User quits
 
   @TC_1712
-  Scenario: Admin can edit all user info
+  Scenario: Admin can edit all manager info
     Given admin clicks on edit button "ROLE_MANAGER"
     Then admin changes all user info
     Then  User quits
@@ -109,22 +105,22 @@ Feature:US_Story17 System should allow the Admin to manage users
     And User quits
 
   @TC_1714
-  Scenario: Admin can view all admin info
-    And admin clicks on view button "ROLE_EMPLOYEE"
-    Then admin asserts all information
+  Scenario: Admin can view all employee info
+  Given admin clicks on Employee's view button
+   Then admin asserts Employee's all information
     Then  User quits
 
   @TC_1715
-  Scenario: Admin can edit all user info
+  Scenario: Admin can edit all employee info
     Given admin clicks on edit button "ROLE_EMPLOYEE"
     Then admin changes all user info
     Then  User quits
 
   @TC_1716
-  Scenario: Admin can delete all admin info
+  Scenario: Admin can delete all employee info
     Given User clicks on Delete button on a user
   And User clicks on Cancel button.
 #   And User clicks on Delete button on a user
-    #And User confirms the deletes
-#    Then Admin deletes user
+#   And User confirms the deletes
+#   Then Admin deletes user
     And User quits

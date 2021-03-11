@@ -27,8 +27,6 @@ public class Us17_Page {
         @FindBy(xpath = "//tbody/tr[1]/td[6]")
         public WebElement checkRole;
         @FindBy(xpath="//dd[1]//span[1]")
-        public WebElement userName1;
-        @FindBy(xpath="//dd[1]//span[1]")
         public WebElement userName;
         @FindBy(xpath = "//input[@name='login']")
         public WebElement userEditLogin;
@@ -38,12 +36,29 @@ public class Us17_Page {
         public WebElement userEditLastName;
         @FindBy(xpath = "//button[@type='submit']")
         public WebElement userEditSaveButton;
-       @FindBy(xpath=("//body[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[10]/div[1]/a[3]/span[1]/span[1]"))
+        @FindBy(xpath=("//body[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[10]/div[1]/a[3]/span[1]/span[1]"))
         public WebElement deleteButton;
         @FindBy(xpath="//body/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/button[2]")
         public WebElement deletes;
         @FindBy(xpath = "//a[@class='btn btn-info btn-sm']")
         public WebElement userViewButton;
+        @FindBy(xpath = "//*[.='ROLE_USER']")
+        public WebElement roleUser;
+        @FindBy(xpath = "//*[.='ROLE_ADMIN']")
+        public WebElement roleAdmin;
+        @FindBy(xpath = "//*[.='ROLE_EMPLOYEE']")
+        public WebElement roleEmployee;
+        @FindBy(xpath = "//*[.='ROLE_MANAGER']")
+        public WebElement roleManager;
+        @FindBy(xpath = "//*[@href='/admin/user-management/tahsin']")
+        //tbody/tr[@id='merhaba_dunyaeeeeeeeeeeeeeeeee']/td[10]/div[1]/a[1]
+        public  WebElement employeeView;
+        @FindBy(xpath = "//*[@href='/admin/user-management/team5manager']")
+        public  WebElement managerView;
+        @FindBy(xpath = "//*[@href='/admin/user-management/edemir']")
+        public  WebElement userView;
+        @FindBy(xpath = "//*[@href='/admin/user-management/erol']")
+        public  WebElement adminView;
 
 
 
