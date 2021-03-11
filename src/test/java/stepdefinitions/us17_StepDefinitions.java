@@ -5,7 +5,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import pages.NewPasswordPage;
 import pages.Us17_Page;
 import utilities.ConfigReader;
@@ -20,6 +22,7 @@ public class us17_StepDefinitions {
     NewPasswordPage newPasswordPage=new NewPasswordPage();
     String userName;
     String checkrole=String.valueOf(us17_page.checkRole);
+    Actions actions = new Actions(Driver.getDriver());
     @Given("^Enter adminUsername$")
     public void enter_adminUsername() {
         newPasswordPage.userNameTextBox.sendKeys(ConfigReader.getProperty("adminUsername"));
@@ -33,34 +36,8 @@ public class us17_StepDefinitions {
         us17_page.administrationLink.click();
         us17_page.userManagementButton.click();
     }
-//    @Given("^Check Profiles as ROLE_USER$")
-//    public void check_Profiles_as_ROLE_USER() {
-//        Assert.assertEquals(us17_page.checkRole.getText(), "ROLE_USER");
-//        System.out.println("First role is Role_User");
-//        ReusableMethods.waitFor(2);
-//    }
-//    @Given("^check Profiles as ROLE_EMPLOYEE$")
-//    public void check_Profiles_as_ROLE_EMPLOYEE() {
-//        Assert.assertEquals(us17_page.checkRole.getText(), "ROLE_EMPLOYEE");
-//        System.out.println("First role is Role_Employee");
-//        ReusableMethods.waitFor(2);
-//    }
-//    @Given("^Check Profiles as ROLE_MANAGER$")
-//    public void check_Profiles_as_ROLE_MANAGER() {
-//        Assert.assertEquals(us17_page.checkRole.getText(), "ROLE_MANAGER");
-//        System.out.println("First role is Role_Manager");
-//        ReusableMethods.waitFor(2);
-//    }
-//    @Given("^Check Profiles as ROLE_ADMIN$")
-//    public void check_Profiles_as_ROLE_ADMIN() {
-//        Assert.assertEquals(us17_page.checkRole.getText(), "ROLE_ADMIN");
-//        System.out.println("First role is Role_Admin");
-//        ReusableMethods.waitFor(2);
-//    }
     @Given("check Profiles")
         public void check_profile() {
-
-
         switch (checkrole) {
             case "User":
                 Assert.assertEquals(us17_page.checkRole.getText(), "ROLE_USER");
@@ -81,7 +58,6 @@ public class us17_StepDefinitions {
                 Assert.assertEquals(us17_page.checkRole.getText(), "ROLE_ADMIN");
                 System.out.println("First role is Role_Admin");
                 break;
-
         }
     }
     @Then("^admin deActivates method$")
@@ -114,20 +90,41 @@ public class us17_StepDefinitions {
     }
     @And("^admin asserts activation$")
             public void admin_asserts_activation(){
-
             Assert.assertTrue(us17_page.successPopup.isDisplayed());
         }
-
         @Given("admin clicks on view button {string}")
         public void admin_click_on_view_button(String string) {
-           userName=Driver.getDriver().findElement(By.xpath("(//*[contains(text(),'" + string + "')]//..//..//..//td[2])[1]")).getText();
+            ReusableMethods.waitFor(1);
             us17_page.userViewButton.click();
         }
-        @Then("^admin asserts all information$")
-        public void verify_admin_is_on_view_page() {
-            ReusableMethods.waitForVisibility(us17_page.userName, 60);
-            Assert.assertEquals(us17_page.userName1.getText(), userName.toString());
+        @Then("^admin asserts User's all information$")
+        public void verify_admin_is_on_view_userpage() {
+            ReusableMethods.waitFor(1);
+            actions.sendKeys(Keys.PAGE_DOWN).perform();
+            ReusableMethods.waitFor(1);
+            Assert.assertTrue(us17_page.roleUser.isDisplayed());
         }
+    @Then("^admin asserts Manager's all information$")
+    public void verify_admin_is_on_view_managerpage() {
+        ReusableMethods.waitFor(1);
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ReusableMethods.waitFor(1);
+        Assert.assertTrue(us17_page.roleManager.isDisplayed());
+    }
+    @Then("^admin asserts Employee's all information$")
+    public void verify_admin_is_on_view_employeepage() {
+        ReusableMethods.waitFor(1);
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ReusableMethods.waitFor(1);
+        Assert.assertTrue(us17_page.roleEmployee.isDisplayed());
+    }
+    @Then("^admin asserts Admin's all information$")
+    public void verify_admin_is_on_view_adminpage() {
+        ReusableMethods.waitFor(1);
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ReusableMethods.waitFor(1);
+        Assert.assertTrue(us17_page.roleAdmin.isDisplayed());
+    }
         @Given("admin clicks on edit button {string}")
         public void admin_click_on_edit_button(String string) throws InterruptedException {
             Thread.sleep(10);
@@ -156,7 +153,28 @@ public class us17_StepDefinitions {
         public void deleteUser(){
             us17_page.deletes.click();
         }
-    }
+        @Given("^admin clicks on User's view button$")
+        public void click_viewButton1 () {
+            ReusableMethods.waitFor(2);
+            us17_page.userView.click();
+        }
+        @Given("admin clicks on Employee's view button")
+        public void click_viewButton2 () {
+            ReusableMethods.waitFor(2);
+            us17_page.employeeView.click();
+        }
+        @Given("admin clicks on Manager's view button")
+        public void click_viewButton3 () {
+            ReusableMethods.waitFor(2);
+            us17_page.managerView.click();
+        }
+        @Given("admin clicks on Admin's view button")
+        public void click_viewButton4 () {
+            ReusableMethods.waitFor(2);
+            us17_page.adminView.click();
+        }
+
+}
 
 
 
