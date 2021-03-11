@@ -3,6 +3,7 @@ package stepdefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.Assert;
 import pojos.Country;
@@ -47,7 +48,12 @@ public class us21_StepDefinitions {
 
     @Then("verify the name of the {int}th country is {string}")
     public void verifyTheNameOfTheThCountryIs(int country, String countryName) {
-        Assert.assertEquals(listOfCountries.get(country).get("name"), countryName);
+        //Assert.assertEquals(listOfCountries.get(country).get("name"), countryName);
+
+        JsonPath jsonPath = response.jsonPath();
+        String newName = jsonPath.getString("name");
+        Assert.assertTrue("not match",newName.contains(countryName));
+        System.out.println("Validation is succesfull");
     }
 
     @And("get the information of the country with {string} id")
