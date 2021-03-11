@@ -15,4 +15,4 @@ Feature: read, create, update and delete all states
 
     Examples: all states
       |endPoint|id|
-      |https://www.gmibank.com/api/tp-states|/27501|
+      |https://www.gmibank.com/api/tp-states|/27502|
