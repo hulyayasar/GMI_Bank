@@ -90,7 +90,7 @@ public class us24_us27_StepDefinitions {
 
     @Given("user provides api end point to delete states using {string} and its extension {string}")
     public void user_provides_api_end_point_to_delete_states_using_and_its_extension(String endPoint, String id) {
-        System.out.println(endPoint+"/"+deletedID);
+        System.out.println(endPoint+"/"+id);
         response = given().headers(
                 "Authorization",
                 "Bearer " + ConfigReader.getProperty("api_bearer_token"),
@@ -99,7 +99,7 @@ public class us24_us27_StepDefinitions {
                 "Accept",
                 ContentType.JSON)
                 .when().body(StateJson.CREATE_STATE)
-                .delete(endPoint+ "/"+deletedID)
+                .delete(endPoint+ "/"+id)
                 .then()
                 .extract()
                 .response();

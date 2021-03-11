@@ -8,7 +8,7 @@ Feature: read, create, update and delete all states
   Scenario: create state
     Given user creates a new state using "https://www.gmibank.com/api/tp-states"
 
-
+@DeleteState
   Scenario Outline: delete states
     #Given user deletes the created state
     And user provides api end point to delete states using "<endPoint>" and its extension "<id>"
