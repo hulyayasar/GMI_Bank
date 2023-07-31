@@ -1,2 +1,2 @@
 # gmiBankTheLastBugBenders
-Create GMI Bank website
+GMI Bank website
