@@ -1,2 +1,1 @@
-# gmiBankTheLastBugBenders
 GMI Bank website
